@@ -8,19 +8,18 @@ import Project from './Component/5-Projects/Projects';
 import Contact from './Component/6-Contact/Contact';
 
 const App = () => {
-
   return (
-      <BrowserRouter>
-        <NavBar/>
-        <Routes>
-          <Route path="/" element={<HomePage/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/skills" element={<Skills/>}/>
-          <Route path="/project" element={<Project/>} />
-          <Route path="/contact" element={<Contact/>} />
-        </Routes>
-      </BrowserRouter>
-  )
-}
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App;
