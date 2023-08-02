@@ -5,12 +5,18 @@
   align-items: center;
   width: 100%;
   height: 60px;
-  background-color: aqua;
+  background-color: orange;
 }
 
 .Container_navbar :link {
   padding: 3%;
   margin-left: 5%;
   border-radius: 15%;
-  background-color:brown;
+}
+
+.active {
+  font-weight: bold;
+  transition: 0.2s;
+  font-size: large;
+  color: white;
 }

@@ -1,2 +1,13 @@
-.Container-home {
+.container-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 10em;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: grey;
+  border: 2px solid black;
+  border-radius: 2em;
 }
