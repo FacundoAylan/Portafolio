@@ -6,17 +6,16 @@ import Project from './Component/3-Projects/Projects';
 import Contact from './Component/4-Contact/Contact';
 
 const App = () => {
-
   return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage/>}/>
-          <Route path="/project" element={<Project/>} />
-          <Route path="/contact" element={<Contact/>} />
-        </Routes>
-        <NavBar/>
-      </BrowserRouter>
-  )
-}
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App;

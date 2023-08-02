@@ -1,3 +1,83 @@
-.Container_home {
-  background-color: red;
+.container-home {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../../assets/home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
+@keyframes openWindows {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.window {
+  position: absolute;
+  top: 8%;
+  left: 2%;
+  width: 60%;
+  height: 80%;
+  border: 2px solid black;
+  border-radius: 1em;
+  background-color: #86b1e08e;
+  pointer-events: none;
+  animation: openWindows 1s ease 1 forwards;
+  opacity: 0;
+}
+
+.title-bar {
+  background-color: #62aeef;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  color: #fff;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 5px;
+  margin-right: 10px;
+}
+
+.button {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button.minimize {
+  padding: 0.5%;
+  background-color: #ffff00;
+}
+
+.button.maximize {
+  padding: 0.5%;
+  background-color: #00ff00;
+}
+
+.button.close {
+  padding: 0.5%;
+  background-color: #ff0000;
+}
+
+.content {
+  padding: 2%;
+}
+
