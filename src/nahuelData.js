@@ -2,6 +2,7 @@ import profile from './assets/profile.jpg';
 
 const data = {
   name: 'Nahuel Lescano',
+  presentation: "Hi there! Welcome to my porfolio website. I'm Nahuel Lescano",
   image: profile,
   description: `I am a passionate Full Stack Developer and Programmer Analyst, with a background in Computer Engineering.
 I have a strong ability to adapt quickly and learn new technologies and languages on the go.`,
@@ -19,6 +20,10 @@ On the backend, I implemented Express.js and Sequelize. This project allowed me 
  On the backend, we leveraged Express, Node.js, and Sequelize to handle data and business logic.
  For the frontend, we used Vite + React, Redux, and Chakra UI, complemented by pure CSS.
  The collaborative effort taught me the value of teamwork and communication in a development environment.`,
+  },
+  links: {
+    github: 'github.com/NahuelLescano',
+    linkedin: 'https://www.linkedin.com/in/nahuel-lescano-906a2618b/',
   },
 };
 

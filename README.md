@@ -1,8 +1,23 @@
-# React + Vite
+# Welcome to our porfolio repository
+Hello there! We're Nahuel and Facundo, and We're delighted to have you here. Welcome to our portfolio, where We showcase our passion for technology and our journey as developers.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Our website
+For now, We do not have our website deployed. However if you want to see it work, you will have to clone this repository. Then You will have to install all dependencies using your favorite package manager, like:
+```bash
+npm install
+```
+and then running it:
+```bash
+npm start
+```
 
-Currently, two official plugins are available:
+## Contact us
+We're excited to connect with fellow developers, potential employers, and collaborators. Whether you want to discuss a project or just say hi, feel free to reach out to us through the following channels:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Nahuel's Github](https://github.com/NahuelLescano "Personal Github profile")
+
+[Nahuel's LinkedIn](https://www.linkedin.com/in/nahuel-lescano-906a2618b/ "LinkedIn profile")
+
+[Facundo's LinkedIn](https://www.linkedin.com/in/facundo-aylan-582b52257/ "LinkedIn profile")
+
+[Facundo's Github](https://github.com/FacundoAylan "Personal Github profile")

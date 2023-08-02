@@ -3,10 +3,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  background-color: grey;
+  border: 2px solid black;
+  border-radius: 2rem;
 }
 
 .image {
-  width: 100%;
-  height: auto;
+  height: 30em;
+  width: 30em;
   border-radius: 2em;
+}
+
+h2 {
+  margin-left: 10px;
 }
