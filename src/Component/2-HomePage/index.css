@@ -23,7 +23,7 @@
   left: 2%;
   width: 60%;
   height: 80%;
-  border: 2px solid black;
+  border: 2px solid #bc9f8b;
   border-radius: 1em;
   background-color: #86b1e08e;
   pointer-events: none;
@@ -80,4 +80,5 @@
 .content {
   padding: 2%;
 }
+
 

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import data from '../../nahuelData';
+import Typewriter from 'typewriter-effect';
 import './index.css';
 
 const HomePage = () => {
@@ -15,7 +16,16 @@ const HomePage = () => {
           </div>
         </div>
         <div className="content">
-          <h1>{data.presentation}</h1>
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter.typeString(data.description)
+              .pauseFor(50)
+              .start();
+            }}
+            options={{
+              delay: 50,
+            }}
+          />
         </div>
       </div>
     </div>
