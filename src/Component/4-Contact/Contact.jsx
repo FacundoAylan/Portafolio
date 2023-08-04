@@ -1,13 +1,33 @@
 import React from 'react';
-import './index.css';
+import { FaWhatsapp, FaLinkedin, FaGithub } from 'react-icons/fa';
 import data from '../../nahuelData';
+import './index.css';
 
 const Contact = () => {
+  const phoneNumber = '1136747801';
   return (
-    <div className="Container_About">
-      <h1>Contact</h1>
-      <h2>Github: {data.links.github}</h2>
-      <h2>LinkedIn: {data.links.linkedin}</h2>
+    <div className="container-contact">
+      <div className="star-wars">
+        <div className="crawl">
+          <a
+            href={`https://wa.me/${phoneNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp className="iconStyle" />
+          </a>
+          <a
+            href={data.links.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="iconStyle" />
+          </a>
+          <a href={data.links.github} target="_blank" rel="noopener noreferrer">
+            <FaGithub className="iconStyle" />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
