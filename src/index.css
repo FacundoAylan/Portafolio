@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'pixel';
+  src: url('./assets/font/pixel.ttf') format('truetype');
+}
 body {
-  margin: 0;
   width: 100%;
-  min-height: 95vh;
+  max-height: 98vh;
+  margin: 0;
   background-color: '#333333';
+}
+
+.container-app {
+
 }
