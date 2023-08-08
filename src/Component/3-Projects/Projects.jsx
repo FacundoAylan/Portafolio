@@ -12,23 +12,26 @@ const Projects = () => {
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
+
   return (
     <div className="Container_project">
-      <h1 className='title-project'>Projectos</h1>
+      <h1 className="title-project">Projects</h1>
       <div className="cards-container">
         <button className="open-modal-button1" onClick={handleOpenModal}>
-          <div className='card'></div>
+          <div className="card"></div>
         </button>
         <button className="open-modal-button2" onClick={handleOpenModal}>
-          <div className='card'></div>
+          <div className="card"></div>
         </button>
         <button className="open-modal-button3" onClick={handleOpenModal}>
-          <div className='card'></div>
+          <div className="card"></div>
         </button>
         {isModalOpen && (
           <div className="modal-overlay" onClick={handleCloseModal}>
             <div className="modal">
-              <button onClick={handleCloseModal}>X</button>
+              <button onClick={handleCloseModal} className="button-modal">
+                X
+              </button>
               <h1>Projects</h1>
               <h2>{data.projects.rickAndMorty}</h2>
               <h2>{data.projects.dogs}</h2>

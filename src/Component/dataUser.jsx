@@ -1,2 +1,2 @@
-export const User =[{name: 'colaboracion'}];
-export const User2 = [{name:'Facundo Aylan'}];
+export const User = [{ name: 'Nahuel Lescano' }];
+export const User2 = [{ name: 'Facundo Aylan' }];
