@@ -4,13 +4,13 @@ import data from '../../nahuelData';
 import './index.css';
 
 const Contact = () => {
-  const phoneNumber = '1136747801';
   return (
     <div className="container-contact">
       <div className="star-wars">
         <div className="crawl">
+          <h1 className='title'>Feel free to contact me!</h1>
           <a
-            href={`https://wa.me/${phoneNumber}`}
+            href={`https://wa.me/${data.links.whatsapp}`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -23,6 +23,7 @@ const Contact = () => {
           >
             <FaLinkedin className="iconStyle" />
           </a>
+
           <a href={data.links.github} target="_blank" rel="noopener noreferrer">
             <FaGithub className="iconStyle" />
           </a>

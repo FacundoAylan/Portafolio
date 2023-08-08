@@ -9,6 +9,38 @@
   font-family: pixel;
   margin: 0.4%;
 }
+.animate-bg:before, .animate-bg:after {
+	content: '';
+	position: absolute;
+	left: -8px;
+	top: -8px;
+	background: linear-gradient(120deg, #aff072, #8d01a0, #031ba5,#81be76,#da5c82,  
+	#e6036d, #db4fa1,#ff6600, #58d6ec,#e4e46e, #00c3ff);
+	background-size: 300%;
+	width: calc(100% + 15px);
+	height: calc(100% + 15px);
+	z-index: -1;
+	/* animation: BGgradient 15s ease infinite;  */
+}
+
+@keyframes BGgradient {
+	0% {
+		background-position: 0% 200%;
+	}
+	50% {
+		background-position: 200% 0%;
+	}
+	100% {
+		background-position: 0% 330%;
+	}
+}
+
+.animate-bg:after {
+	filter: brightness(1.4);
+	filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));
+	filter: blur(15px);
+}
+
 @keyframes openWindows {
   0% {
     opacity: 0;
@@ -19,6 +51,7 @@
     transform: scale(1);
   }
 }
+
 .window {
   position: absolute;
   top: 8%;

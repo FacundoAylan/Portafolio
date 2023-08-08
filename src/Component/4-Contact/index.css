@@ -5,12 +5,38 @@
   background-repeat: no-repeat;
   height: 95.5vh;
   padding: 1%;
+  color: white;
 }
+
+.crawl {
+  width: 25%;
+  height: 20%;
+  padding: 1rem;
+  animation: crawl 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1;
+  text-shadow: 0 0 30px #0e639c, 0 0 40px #0e639c, 0 0 10px #0e639c;
+  transition: text-shadow 0.2s ease-in-out;
+  font-family: pixel;
+  letter-spacing: 1%;
+  font-size: 0.8rem;
+}
+@keyframes crawl {
+  0% {
+    transform: translateY(100%);
+  }
+  60% {
+    transform: translateY(15%);
+  }
+} 
 
 .iconStyle {
   font-size: 45px;
-  color: #d5dbdb;
-  margin-left: 5%;
+  margin-left: 7%;
+  color: white;
+  position: relative;
+}
+.iconStyle:hover {
+  transform: scale(1.2);
+  color: #3f72ab;
 }
 
 .star-wars {
@@ -18,23 +44,6 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  margin-top: 15%;
+  margin-top: 10%;
   margin-left: 20%;
-}
-
-.crawl {
-  width: 20%;
-  height: 20%;
-  padding: 1rem;
-  animation: crawl 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1;
-}
-
-@keyframes crawl {
-  0% {
-    transform: translateY(100%);
-  }
-  60% {
-    transform: translateY(40%);
-  }
-
 }

@@ -5,7 +5,7 @@ import './index.css';
 
 const HomePage = () => {
   return (
-    <div className="container-home">
+    <div className="container-home animate-bg">
       <div className="window">
         <div className="title-bar">
           <div className="title">Full Stack Developer</div>
