@@ -22,8 +22,9 @@ On the backend, I implemented Express.js and Sequelize. This project allowed me 
  The collaborative effort taught me the value of teamwork and communication in a development environment.`,
   },
   links: {
-    github: 'github.com/NahuelLescano',
+    github: 'https://github.com/NahuelLescano',
     linkedin: 'https://www.linkedin.com/in/nahuel-lescano-906a2618b/',
+    whatsapp: 1164356116,
   },
 };
 
