@@ -1,45 +1,43 @@
 import React, { useState } from 'react';
-import './index.css';
-import data from '../../nahuelData';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import './index.css'; 
+import image1 from '../../assets/mario.jpg';
+import image2 from '../../assets/contact.jpg';
+import image3 from '../../assets/home.jpg';
+
+const images = [image1,image2,image3];
 
 const Projects = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState(images[0]);
 
-  const handleOpenModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
+  const handleImageChange = (index) => {
+    setCurrentImage(images[index]);
   };
 
   return (
-    <div className="Container_project">
-      <h1 className="title-project">Projects</h1>
-      <div className="cards-container">
-        <button className="open-modal-button1" onClick={handleOpenModal}>
-          <div className="card"></div>
-        </button>
-        <button className="open-modal-button2" onClick={handleOpenModal}>
-          <div className="card"></div>
-        </button>
-        <button className="open-modal-button3" onClick={handleOpenModal}>
-          <div className="card"></div>
-        </button>
-        {isModalOpen && (
-          <div className="modal-overlay" onClick={handleCloseModal}>
-            <div className="modal">
-              <button onClick={handleCloseModal} className="button-modal">
-                X
-              </button>
-              <h1>Projects</h1>
-              <h2>{data.projects.rickAndMorty}</h2>
-              <h2>{data.projects.dogs}</h2>
-              <h2>{data.projects.bodu}</h2>
-            </div>
-          </div>
-        )}
+    <div className="carousel-container">
+      <div
+        className="background-image"
+        style={{ backgroundImage: `url(${currentImage})` }}
+      >
+        <h1>titulo del projecto</h1>
+        <h2>description del projecto</h2>
+        <h2>aportes</h2>
+        <h2>tegnologias</h2>
       </div>
+      <Carousel
+        showArrows={true}
+        onChange={handleImageChange}
+        dynamicHeight={false}
+        className="carousel"
+      >
+        {images.map((image, index) => (
+          <div key={index} className='container-image'>
+            <img  className='image' src={image} alt={`Image ${index}`} />
+          </div>
+        ))}
+      </Carousel>
     </div>
   );
 };
