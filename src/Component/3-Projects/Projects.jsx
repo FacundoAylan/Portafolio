@@ -37,7 +37,7 @@ const Projects = () => {
           <h2>tegnologias</h2>
         </div>
       </div>
-      <h1 className='title'>Projects</h1>
+      <h1 className='title-projects'>Projects</h1>
       <button
         className='next'
         onClick={handleNextImage}
