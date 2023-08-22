@@ -15,13 +15,21 @@ const Projects = () => {
     setCurrentImage(index);
   };
   const handlePrevImage = () => {
-    const newIndex = (currentImage - 1 + images.length) % images.length;
-    setCurrentImage(newIndex);
+    if( currentImage === 0) {
+      setCurrentImage(images.length-1)
+    }else{
+      const newIndex = currentImage - 1;
+      setCurrentImage(newIndex);
+    }
   };
 
   const handleNextImage = () => {
-    const newIndex = (currentImage + 1) % images.length;
-    setCurrentImage(newIndex);
+    if( currentImage === images.length-1) {
+      setCurrentImage(0)
+    }else{
+      const newIndex = currentImage + 1;
+      setCurrentImage(newIndex);
+    }
   };
 
   return (
@@ -40,15 +48,13 @@ const Projects = () => {
       <h1 className='title-projects'>Projects</h1>
       <button
         className='next'
-        onClick={handleNextImage}
-        disabled={currentImage === 0}
+        onClick={handlePrevImage}
       >
         &#8249;
       </button>
       <button
         className='prev'
-        onClick={handlePrevImage}
-        disabled={currentImage === images.length - 1}
+        onClick={handleNextImage}
       >
         &#8250;
       </button>

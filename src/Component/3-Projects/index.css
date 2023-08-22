@@ -86,7 +86,6 @@
 
 .carousel .thumbs .thumb.selected {
   /* Estilos para la imagen pequeña seleccionada */
-  border-color: #007bff;
 }
 .carousel .thumbs .thumb:hover {
   border-color: #007bff;

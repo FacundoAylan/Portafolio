@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FaHome, FaBriefcase, FaEnvelope } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import './index.css';
