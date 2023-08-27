@@ -2,6 +2,16 @@
   font-family: 'pixel';
   src: url('./assets/font/pixel.ttf') format('truetype');
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+  font-size: 62.5%;
+}
 body {
   width: 100%;
   max-height: 98vh;

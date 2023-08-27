@@ -3,9 +3,9 @@ import { FaWhatsapp, FaLinkedin, FaGithub } from 'react-icons/fa';
 import data from '../../nahuelData';
 import './index.css';
 
-const Contact = () => {
+const Skills = () => {
   return (
-    <div className="container-contact">
+    <div className="container-contact ">
       <div className="star-wars">
         <div className="crawl">
           <h1 className='title'>Feel free to contact me!</h1>
@@ -33,4 +33,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Skills;

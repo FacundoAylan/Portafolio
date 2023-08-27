@@ -51,7 +51,7 @@ const HomePage = () => {
             <div>
               <FaFileDownload className="icon" />
             </div>
-            <div>CV</div>
+            <div style={{fontSize:'15px'}}>CV</div>
           </a>
           <a
             href={`https://wa.me/${data.links.whatsapp}`}
@@ -61,7 +61,7 @@ const HomePage = () => {
             <div>
               <FaWhatsapp className="icon" />
             </div>
-            <div>WhattsApp</div>
+            <div style={{fontSize:'15px'}}>WhattsApp</div>
           </a>
           <a
             href={data.links.linkedin}
@@ -71,14 +71,14 @@ const HomePage = () => {
             <div>
               <FaLinkedin className="icon" />
             </div>
-            <div>LinkedIn</div>
+            <div style={{fontSize:'15px'}}>LinkedIn</div>
           </a>
 
           <a href={data.links.github} target="_blank" rel="noopener noreferrer">
             <div>
               <FaGithub className="icon" />
             </div>
-            <div>Git-Hub</div>
+            <div style={{fontSize:'15px'}}>Git-Hub</div>
           </a>
         </div>
       </div>

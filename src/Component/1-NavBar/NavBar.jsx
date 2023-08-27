@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaHome, FaBriefcase, FaEnvelope } from 'react-icons/fa';
+import { FaHome, FaBriefcase, FaCode } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import './index.css';
 
@@ -21,7 +21,7 @@ const NavBar = () => {
         <button className="Home">
           <div className="Tooltip-home">Projects</div>
           <NavLink
-            to="/project"
+            to="/Project"
             className={({ isActive }) => (isActive ? 'active' : 'disable')}
           >
             <FaBriefcase className="icons" />
@@ -30,12 +30,12 @@ const NavBar = () => {
       </div>
       <div className="Container-button">
         <button className="Home">
-          <div className="Tooltip-home">Contact</div>
+          <div className="Tooltip-home">Skill</div>
           <NavLink
-            to="/contact"
+            to="/Skills"
             className={({ isActive }) => (isActive ? 'active' : 'disable')}
           >
-            <FaEnvelope className="icons" />
+            <FaCode className="icons" />
           </NavLink>
         </button>
       </div>
