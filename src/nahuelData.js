@@ -2,7 +2,7 @@ import profile from './assets/profile.jpg';
 
 const data = {
   name: 'Nahuel Lescano',
-  presentation: "Hi there! Welcome to my porfolio website. I'm Nahuel Lescano",
+  presentation: "Hi there! Welcome to my porfolio website.",
   image: profile,
   description: `I am a passionate Full Stack Developer and Programmer Analyst, with a background in Computer Engineering.
 I have a strong ability to adapt quickly and learn new technologies and languages on the go.`,

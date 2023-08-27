@@ -1,70 +1,17 @@
-import React, { useState } from 'react';
-import imagen1 from './images/1.jpg';
-import imagen6 from './images/4.jpg';
-import imagen5 from './images/6.jpg';
-import imagen4 from './images/8.jpg';
-import imagen3 from './images/9.jpg';
-import imagen2 from './images/10.jpeg';
+/* eslint-disable react/no-unescaped-entities */
+import { useState } from 'react';
 import { FaChevronLeft, FaChevronRight, FaTimes } from 'react-icons/fa';
+import slides from './slides';
 import './index.css';
 
+/*
+Creo que modal debería ser un componente aparte para poder poner diferentes 
+descripciones dentro
+*/
 const Projects = () => {
   const [slideNumber, setSlideNumber] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const slides = [
-    {
-      image: imagen1,
-      title: 'Team',
-      subtitle: '00. Team SEC C Esports',
-      content: 'SEC C Esports is a professional esports team based in India...',
-      rightTitle: 'Sec c',
-      rightSubtitle: 'Esports',
-    },
-    {
-      image: imagen2,
-      title: 'Snak',
-      subtitle: '01. The Entry Fragger',
-      content: 'Abhishek Shakya, also known by his in-game name SnakeEye...',
-      rightTitle: 'eEye',
-      rightSubtitle: 'Abhishek',
-    },
-    {
-      image: imagen3,
-      title: 'Ven',
-      subtitle: '02. The Supporter',
-      content:
-        'Ashish Shakya, in-game name Venom, is the support player of Team SEC C...',
-      rightTitle: 'om',
-      rightSubtitle: 'Ashish',
-    },
-    {
-      image: imagen4,
-      title: 'Fla',
-      subtitle: '03. The IGL',
-      content:
-        'Pankaj Rajpoot, in-game name Flash, is the in-game leader (IGL) of Team SEC C...',
-      rightTitle: 'sh',
-      rightSubtitle: 'pankaj',
-    },
-    {
-      image: imagen5,
-      title: 'Mr. R',
-      subtitle: '04. The All Rounder',
-      content:
-        'Shivam Rajput, in-game name Mr. Rajput, is an all-rounder of Team SEC C...',
-      rightTitle: 'ajput',
-      rightSubtitle: 'Shivam',
-    },
-    {
-      image: imagen6,
-      title: 'Sass',
-      subtitle: '05. The Extra',
-      content:
-        'Shashank Pal, in-game name Sassy Boi, is an extra player of Team SEC C...',
-      rightTitle: 'y Boi',
-      rightSubtitle: 'Shashank',
-    },
-  ];
+  
 
   const handleNextSlide = () => {
     let nextSlideNumber = slideNumber + 1;
@@ -138,9 +85,13 @@ const Projects = () => {
               <FaTimes size="3rem" color="red" />
             </button>
           <div className="modal-content">
-            <h1>Detalle sobre el proyecto</h1>
-            <p>Detalles adicionales aquí...</p>
-          </div>
+            <h1>
+              I've been working on a web page dedicated to the popular show Rick and Morty.
+              The project involved using React, Redux, and pure CSS for frontend development.
+              On the backend, I utilized Express.js and Sequelize to manage data.
+              It was an incredible learning experience, and I'm proud to have completed it!
+            </h1>
+         </div>
         </div>
       )}
     </>

@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from 'react';
 import data from '../../nahuelData';
 import {
-  FaWhatsapp,
   FaLinkedin,
   FaGithub,
-  FaDownload,
   FaFileDownload,
 } from 'react-icons/fa';
 import './index.css';
@@ -22,7 +19,7 @@ const HomePage = () => {
             fontSize: '20px',
           }}
         >
-          Hola, Mi nombre es
+          Hi! My name is
         </span>
         <span
           style={{
@@ -31,7 +28,7 @@ const HomePage = () => {
             fontSize: '70px',
           }}
         >
-          Facundo Aylan
+          Nahuel Lescano
         </span>
         <span
           style={{
@@ -43,8 +40,8 @@ const HomePage = () => {
           Full-Stack Developer
         </span>
         <span className="custom-span">
-          Experiencia en Diseño y Desarrollo de Páginas Web y Aplicaciones
-          Móviles
+          I am a passionate Full Stack Developer and Programmer Analyst, with a background in Computer Engineering.
+          I have a strong ability to adapt quickly and learn new technologies and languages on the go.
         </span>
         <div className="container-link">
           <a href={data.links.github} target="_blank" rel="noopener noreferrer">
@@ -52,16 +49,6 @@ const HomePage = () => {
               <FaFileDownload className="icon" />
             </div>
             <div style={{fontSize:'15px'}}>CV</div>
-          </a>
-          <a
-            href={`https://wa.me/${data.links.whatsapp}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <FaWhatsapp className="icon" />
-            </div>
-            <div style={{fontSize:'15px'}}>WhattsApp</div>
           </a>
           <a
             href={data.links.linkedin}
