@@ -4,29 +4,96 @@ import data from '../../nahuelData';
 import './index.css';
 
 const Skills = () => {
+  
   return (
     <div className="container-contact ">
       <div className="star-wars">
         <div className="crawl">
-          <h1 className='title'>Feel free to contact me!</h1>
-          <a
-            href={`https://wa.me/${data.links.whatsapp}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaWhatsapp className="iconStyle" />
-          </a>
-          <a
-            href={data.links.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin className="iconStyle" />
-          </a>
+          <span className="title">Front-End</span>
+          <div className="skills">
+            <div className='containerImg'>
+              <img
+                src="https://www.svgrepo.com/show/452185/css-3.svg"
+                alt="CSS3"
+                className='image'
+              />
+              <p class="image-description">CSS</p>
+            </div>
+            <div className='containerImg'>
+              <img
+                src="https://www.svgrepo.com/show/452228/html-5.svg"
+                alt="HTML5"
+                className='image'
+              />
 
-          <a href={data.links.github} target="_blank" rel="noopener noreferrer">
-            <FaGithub className="iconStyle" />
-          </a>
+            </div>
+            <div className='containerImg'>
+              <img
+                src="https://www.svgrepo.com/show/452075/node-js.svg"
+                alt="JavaScript"
+                className='image'
+              />
+            </div>
+            <div className='containerImg'>
+              <img
+                src="https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg"
+                alt="React"
+                className='image'
+              />
+            </div>
+            <div className='containerImg'>
+              <img
+                src="https://profilinator.rishav.dev/skills-assets/redux-original.svg"
+                alt="Redux"
+                className='image'
+              />
+            </div>
+            <div className='containerImg'>
+              <img
+                src="https://profilinator.rishav.dev/skills-assets/chakraui.png"
+                alt="Chakra UI"
+                className='image'
+              />
+            </div>
+            <div className='containerImg'>
+              <img
+                src="https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg"
+                alt="React native"
+                className='image'
+              />
+            </div>
+          </div>
+          <span className="title">Back-End</span>
+          <div className='skills'>
+          <div className='containerImg'>
+            <img
+              src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg"
+              alt="Node.js"
+              className='image'
+            />
+          </div>
+          <div className='containerImg'>
+            <img
+              src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg"
+              alt="Express.js"
+              className='image'
+            />
+          </div>
+          <div className='containerImg'>
+            <img
+              src="https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg"
+              alt="PostgreSQL"
+              className='image'
+            />
+          </div>
+          <div className='containerImg'>
+            <img
+              src="https://profilinator.rishav.dev/skills-assets/firebase.png"
+              alt="MySQL"
+              className='image'
+            />
+          </div>
+          </div>
         </div>
       </div>
     </div>
