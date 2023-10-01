@@ -1,0 +1,108 @@
+@media screen and (max-width: 480px) {
+  .Container_navbar {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+    z-index: 10;
+    margin-bottom: 2%;
+  }
+  .Container-button {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+  }
+  
+  .Container_navbar button {
+    width: 100%;
+    height: 98%;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: transparent;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Container_navbar {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+    z-index: 10;
+    margin-bottom: 0.5%;
+  }
+  
+  .Container-button {
+    height: 100%;
+    width: 5%;
+  }
+  
+  .Container_navbar button {
+    width: 100%;
+    height: 98%;
+    border: none;
+    margin-left: 1%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: transparent;
+  }
+}
+.Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  font-size: 40px;
+  color: #62adefce;
+  background-color: #263846; 
+  border: 2px solid #62adefce;
+  border-radius: 12px;
+  padding: 3px;
+}
+
+.Tooltip-home {
+  position: absolute;
+  top: -30px;
+  margin-left: 2%;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.Home:hover {
+  transform: scale(1.1);
+  transform: translateY(-5px);
+}
+
+.Home:hover .Tooltip-home {
+  opacity: 1;
+  transform: translateY(-5px);
+  transform: scale(1.1);
+}
+
+.Container_navbar :link {
+  padding: 3%;
+  margin-left: 5%;
+  border-radius: 15%;
+}
+
+.active-navbar {
+  font-weight: bold;
+  transition: 0.2s;
+  font-size: large;
+}
+

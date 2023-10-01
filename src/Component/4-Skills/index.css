@@ -1,0 +1,223 @@
+@media screen and (max-width: 480px){
+  .container-contact {
+    background-image: url('../../assets/contact.jpg');
+    background-size: 290% 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 1%;
+    color: white;
+  }
+  .star-wars {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: 30%;
+    margin-left: 3%;
+  }
+  .crawl {
+    width: 70%;
+    height: 20%;
+    animation: crawl 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1;
+    text-shadow: 0 0 30px #0e639c, 0 0 40px #0e639c, 0 0 10px #0e639c;
+    transition: text-shadow 0.2s ease-in-out;
+    font-family: pixel;
+    letter-spacing: 1%;
+    font-size: 0.8rem;
+  }
+  @keyframes crawl {
+    0% {
+      transform: translateY(100%);
+    }
+    60% {
+      transform: translateY(5%);
+    }
+  } 
+  .title {
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 25%;
+  }
+  .skills {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    flex-wrap: wrap;
+  }
+  .containerImg {
+    width: 65px;
+    height: 65px;
+    margin-left: 3%;
+    margin-top: 4%;
+    background-color: rgba(255, 255, 255, 0.336);
+    padding: 1%;
+    border-radius: 12px;
+    border: 2px solid #62adefce;
+    position: relative;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: block;
+  }
+  .image-description {
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    color: white;
+    padding: 2%;
+    font-size: 1.6em;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    border-radius: 12px;
+    white-space: normal;
+    opacity: 0;
+  }
+  
+  .image-description:hover {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    background-color: #263846; 
+    box-sizing: border-box;
+    word-wrap: break-word;
+    color: white; 
+    opacity: 1;
+    cursor: pointer;
+  }
+
+}
+@media screen and (min-width: 1200px){
+  .container-contact {
+    background-image: url('../../assets/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 1%;
+    color: white;
+  }
+
+  .crawl {
+    width: 50%;
+    height: 25%;
+    animation: crawl 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1;
+    text-shadow: 0 0 30px #0e639c, 0 0 40px #0e639c, 0 0 10px #0e639c;
+    transition: text-shadow 0.2s ease-in-out;
+    font-family: pixel;
+    letter-spacing: 1%;
+    font-size: 0.8rem;
+  }
+  @keyframes crawl {
+    0% {
+      transform: translateY(100%);
+    }
+    60% {
+      transform: translateY(9%);
+    }
+  } 
+  
+  .iconStyle {
+    font-size: 45px;
+    margin-left: 7%;
+    color: white;
+  }
+  .iconStyle:hover {
+    transform: scale(1.2);
+    color: #3f72ab;
+  }
+  
+  .star-wars {
+    padding: 1%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 3%;
+  }
+  
+  .skills {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 35%;
+  }
+  .containerImg {
+    width: 65px;
+    height: 65px;
+    margin-left: 3%;
+    background-color: rgba(255, 255, 255, 0.336);
+    padding: 1%;
+    border-radius: 12px;
+    border: 2px solid #62adefce;
+    position: relative;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: block;
+  }
+  .image-description {
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    color: white;
+    padding: 2%;
+    font-size: 1.6em;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    border-radius: 12px;
+    white-space: normal;
+    opacity: 0;
+  }
+  
+  .image-description:hover {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    background-color: #263846; 
+    box-sizing: border-box;
+    word-wrap: break-word;
+    color: white; 
+    opacity: 1;
+    cursor: pointer;
+  }
+}
