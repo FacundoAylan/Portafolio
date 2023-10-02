@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FaChevronLeft, FaChevronRight, FaTimes } from 'react-icons/fa';
 import { BsGithub } from 'react-icons/bs';
 import { BiWorld } from 'react-icons/bi';
