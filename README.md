@@ -1,23 +1,26 @@
-# Welcome to our porfolio repository
-Hello there! We're Nahuel and Facundo, and We're delighted to have you here. Welcome to our portfolio, where We showcase our passion for technology and our journey as developers.
+# Bienvenido a nuestro repo del portafolio.
+Hola! Somos Nahuel y Facuando, y estamos encantado de tenerte por acá. Bienvenido a nuestro portafolio, donde mostramos nuestra pasión por la tecnología y nuestro viaje como desarrolladores full stack.
 
 ## Our website
-For now, We do not have our website deployed. However if you want to see it work, you will have to clone this repository. Then You will have to install all dependencies using your favorite package manager, like:
+Ahora tenemos una nuestra [página deployada](https://portafolio-xi-gray.vercel.app/ "ir al portafolio"). Sin embargo, también podes clonar este repo. Después, tendrás que instalar todas las dependencias usando npm:
+
 ```bash
 npm install
 ```
-and then running it:
+
+Y luego correrlo:
+
 ```bash
 npm start
 ```
 
 ## Contact us
-We're excited to connect with fellow developers, potential employers, and collaborators. Whether you want to discuss a project or just say hi, feel free to reach out to us through the following channels:
+Estamos a su disposición para que nos contacten a través de nuestrar redes o vía mail.
 
-[Nahuel's Github](https://github.com/NahuelLescano "Personal Github profile")
+[Perfil de Github de Nahuel](https://github.com/NahuelLescano "Perfil de github")
 
-[Nahuel's LinkedIn](https://www.linkedin.com/in/nahuel-lescano-906a2618b/ "LinkedIn profile")
+[Perfil de LinkedIn de Nahuel](https://www.linkedin.com/in/nahuel-lescano-906a2618b/ "Perfil de LinkedIn")
 
-[Facundo's LinkedIn](https://www.linkedin.com/in/facundo-aylan-582b52257/ "LinkedIn profile")
+[Perfil de LinkedIn de Facundo](https://www.linkedin.com/in/facundo-aylan-582b52257/ "Perfil de LinkedIn")
 
-[Facundo's Github](https://github.com/FacundoAylan "Personal Github profile")
+[Perfil de Github de Facundo](https://github.com/FacundoAylan "Perfil de Github")

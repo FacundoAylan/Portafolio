@@ -1,5 +1,5 @@
 @media screen and (max-width: 480px){
-  .container-contact {
+  .container-skills{
     background-image: url('../../assets/contact.jpg');
     background-size: 290% 100vh;
     background-position: center;
@@ -14,11 +14,12 @@
     align-items: center;
     margin-top: 30%;
     margin-left: 3%;
+    width: 65%;
   }
   .crawl {
     width: 70%;
     height: 20%;
-    animation: crawl 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1;
+    animation: crawl 2s ease 1;
     text-shadow: 0 0 30px #0e639c, 0 0 40px #0e639c, 0 0 10px #0e639c;
     transition: text-shadow 0.2s ease-in-out;
     font-family: pixel;
@@ -27,10 +28,10 @@
   }
   @keyframes crawl {
     0% {
-      transform: translateY(100%);
+      transform: translateX(100%);
     }
-    60% {
-      transform: translateY(5%);
+    100% {
+      transform: translateX(0%);
     }
   } 
   .title {
@@ -38,10 +39,13 @@
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    padding-left: 25%;
+    width: 100%;
+  }
+  .title1{
+    opacity: 0;
   }
   .skills {
-    width: 100%;
+    width: 150%;
     height: 100%;
     overflow: hidden;
     display: flex;
@@ -50,6 +54,9 @@
     margin-top: 2%;
     margin-bottom: 2%;
     flex-wrap: wrap;
+  }
+  .skills1{
+    opacity: 0;
   }
   .containerImg {
     width: 65px;
@@ -106,118 +113,114 @@
 
 }
 @media screen and (min-width: 1200px){
-  .container-contact {
+  .container-skills{
     background-image: url('../../assets/contact.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    padding: 1%;
-    color: white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
-
+  .star-wars{
+    position: absolute;
+    width: 55%;
+    height: 75%;
+    top: 8%;
+    left: 1%;
+    overflow: hidden;
+    padding: 0;
+  }
   .crawl {
-    width: 50%;
-    height: 25%;
-    animation: crawl 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1;
+    width: 100%;
+    height: 100%;
+    animation: crawl 2s ease 1;
     text-shadow: 0 0 30px #0e639c, 0 0 40px #0e639c, 0 0 10px #0e639c;
     transition: text-shadow 0.2s ease-in-out;
     font-family: pixel;
     letter-spacing: 1%;
     font-size: 0.8rem;
+    background-color: transparent;
   }
   @keyframes crawl {
     0% {
-      transform: translateY(100%);
+      transform: translateX(100%);
     }
-    60% {
-      transform: translateY(9%);
+    100% {
+      transform: translateX(0%);
     }
   } 
-  
-  .iconStyle {
-    font-size: 45px;
-    margin-left: 7%;
+  .title {
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
     color: white;
   }
-  .iconStyle:hover {
-    transform: scale(1.2);
-    color: #3f72ab;
-  }
-  
-  .star-wars {
-    padding: 1%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    margin-top: 10%;
-    margin-left: 3%;
-  }
-  
   .skills {
     width: 100%;
-    height: 100%;
+    height: 25%;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    padding: 1%;
+    background-color: transparent;
   }
-  .title {
+  .title1{
+    width: 100%;
     font-size: 30px;
     font-weight: bold;
-    padding-left: 35%;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  .skills1 {
+    width: 100%;
+    height: 25%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    background-color: transparent;
   }
   .containerImg {
-    width: 65px;
-    height: 65px;
+    width: 80px;
+    height: 80%;
     margin-left: 3%;
     background-color: rgba(255, 255, 255, 0.336);
-    padding: 1%;
     border-radius: 12px;
     border: 2px solid #62adefce;
-    position: relative;
-  }
-  
-  .image {
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    display: block;
+    overflow: hidden;
   }
   .image-description {
-    overflow: hidden;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-weight: bold;
     width: 100%;
-    height: 100%;
-    bottom: 0;
-    left: 0;
-    background-color: transparent;
+    height: 20%;
     color: white;
-    padding: 2%;
-    font-size: 1.6em;
+    font-size: 1rem;
     box-sizing: border-box;
     word-wrap: break-word;
     border-radius: 12px;
     white-space: normal;
-    opacity: 0;
   }
-  
-  .image-description:hover {
+  .image {
     width: 100%;
-    height: 100%;
-    padding: 1%;
-    background-color: #263846; 
-    box-sizing: border-box;
-    word-wrap: break-word;
-    color: white; 
-    opacity: 1;
+    height: 80%;
+    padding: 2%;
+  }
+  .containerImg:hover {
+    transform: scale(1.1);
     cursor: pointer;
   }
+  
+
+  
 }

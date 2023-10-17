@@ -2,7 +2,7 @@ import './index.css';
 
 const Skills = () => {
   return (
-    <div className="container-contact ">
+    <div className="container-skills">
       <div className="star-wars">
         <div className="crawl">
           <span className="title">Front-End</span>
@@ -91,7 +91,7 @@ const Skills = () => {
               />
             </div>
         </div>
-        <span className="title">Other skills</span>
+        <span className="title">Otras habilidades</span>
             <div className="skills">
             <div className="containerImg">
                 <span className="image-description">Java</span>
