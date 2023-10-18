@@ -2,7 +2,7 @@
 Hola! Somos Nahuel y Facuando, y estamos encantado de tenerte por acá. Bienvenido a nuestro portafolio, donde mostramos nuestra pasión por la tecnología y nuestro viaje como desarrolladores full stack.
 
 ## Our website
-Ahora tenemos una nuestra [página deployada](https://portafolio-xi-gray.vercel.app/ "ir al portafolio"). Sin embargo, también podes clonar este repo. Después, tendrás que instalar todas las dependencias usando npm:
+Ahora tenemos una nuestra [página deployada](portfolio-nahuellescano.vercel.app "ir a portafolio"). Sin embargo, también podes clonar este repo. Después, tendrás que instalar todas las dependencias usando npm:
 
 ```bash
 npm install
