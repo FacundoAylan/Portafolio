@@ -1,7 +1,7 @@
 # Bienvenido a nuestro repo del portafolio.
 Hola! Somos Nahuel y Facuando, y estamos encantado de tenerte por acá. Bienvenido a nuestro portafolio, donde mostramos nuestra pasión por la tecnología y nuestro viaje como desarrolladores full stack.
 
-## Our website
+## Nuestra página
 Ahora tenemos una nuestra [página deployada](portfolio-nahuellescano.vercel.app "ir a portafolio"). Sin embargo, también podes clonar este repo. Después, tendrás que instalar todas las dependencias usando npm:
 
 ```bash
@@ -14,7 +14,7 @@ Y luego correrlo:
 npm start
 ```
 
-## Contact us
+## Contactenos
 Estamos a su disposición para que nos contacten a través de nuestrar redes o vía mail.
 
 [Perfil de Github de Nahuel](https://github.com/NahuelLescano "Perfil de github")
