@@ -1,5 +1,6 @@
+import React from 'react';
+import documentoPDF from './cv.pdf';
 import { FaLinkedin, FaGithub, FaCloudDownloadAlt } from 'react-icons/fa';
-import cv from '../../assets/cv/CV.pdf';
 import './index.css';
 
 const HomePage = () => {
@@ -10,19 +11,20 @@ const HomePage = () => {
         <div className="astronout2" />
         <div className="container-info-home">
           <span className='saludo'>
-            Hola, mi nombre es
+            Hola, Mi nombre es
           </span>
-          <span className="fill-text">Nahuel Lescano</span>
+          <span className="fill-text">Facundo Aylan</span>
           <span className='full'>
             Full-Stack Developer
           </span>
           <span className="custom-span">
-            Experiencia en Diseño y Desarrollo de Páginas Web
+            Experiencia en Diseño y Desarrollo de Páginas Web y Aplicaciones
+            Móviles
           </span>
           <div className="container-link">
             <a
-              href={cv}
-              download="CV.pdf"
+              href={documentoPDF} 
+              download="CV-Facundo.pdf"
             >
               <div>
                 <FaCloudDownloadAlt
@@ -33,7 +35,7 @@ const HomePage = () => {
               <div style={{ fontSize: '15px' }}>CV</div>
             </a>
             <a
-              href={'https://www.linkedin.com/in/nahuel-lescano-906a2618b/'}
+              href={'https://www.linkedin.com/in/facundo-aylan-582b52257/'}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -47,7 +49,7 @@ const HomePage = () => {
             </a>
 
             <a
-              href={'https://github.com/NahuelLescano'}
+              href={'https://github.com/FacundoAylan'}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -57,7 +59,7 @@ const HomePage = () => {
                   style={{ borderRadius: '100%', padding: '5%' }}
                 />
               </div>
-              <div style={{ fontSize: '15px' }}>Github</div>
+              <div style={{ fontSize: '15px' }}>Git-Hub</div>
             </a>
           </div>
         </div>
