@@ -105,6 +105,112 @@
     display: none;
   }
 }
+@media  screen and (min-width: 481px) and (max-width:1199px ) {
+  .container-skills{
+    background-color: #090621;
+    height: 100vh;
+    padding: 1%;
+    color: white;
+  }
+  .star-wars {
+    overflow: hidden;
+    display: flex;
+    margin-left: 3%;
+    width: 94%;
+    height: 90vh;
+  }
+  .crawl {
+    width: 100%;
+    height: 20%;
+    animation: crawl 2s ease 1;
+    text-shadow: 0 0 30px #0e639c, 0 0 40px #0e639c, 0 0 10px #0e639c;
+    transition: text-shadow 0.2s ease-in-out;
+    font-family: pixel;
+    letter-spacing: 1%;
+    font-size: 0.8rem;
+  }
+  @keyframes crawl {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  } 
+  .title, .title1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+  }
+  .skills, .skills1 {
+    width: 100%;
+    height: 110%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+
+  .containerImg {
+    width: 65px;
+    height: 65px;
+    margin-left: 3%;
+    background-color: rgba(255, 255, 255, 0.336);
+    padding: 1%;
+    border-radius: 12px;
+    border: 2px solid #62adefce;
+    position: relative;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: block;
+  }
+  .image-description {
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    color: white;
+    padding: 2%;
+    font-size: 1.6em;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    border-radius: 12px;
+    white-space: normal;
+    opacity: 0;
+  }
+  
+  .image-description:hover {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    background-color: #263846; 
+    box-sizing: border-box;
+    word-wrap: break-word;
+    color: white; 
+    opacity: 1;
+  }
+  .nota {
+    display: none;
+  }
+
+}
+
 @media screen and (min-width: 1200px){
   .container-skills{
     background-image: url('../../assets/contact.jpg');
