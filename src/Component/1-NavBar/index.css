@@ -80,7 +80,7 @@
   }
 }
 
-@media  screen and (min-width: 481px) and (max-width:768px ) {
+@media  screen and (min-width: 481px) and (max-width:1199px ) {
   .Container_navbar {
     position: absolute;
     display: flex;
