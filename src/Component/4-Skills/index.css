@@ -1,6 +1,9 @@
 @media screen and (max-width: 480px){
   .container-skills{
-    background-color: #090621;
+    background-image: url('./skills_image/phone.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     padding: 1%;
     color: white;
@@ -107,7 +110,10 @@
 }
 @media  screen and (min-width: 481px) and (max-width:1199px ) {
   .container-skills{
-    background-color: #090621;
+    background-image: url('./skills_image/phone.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     padding: 1%;
     color: white;
