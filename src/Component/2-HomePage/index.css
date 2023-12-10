@@ -170,7 +170,7 @@
   .saludo{
     font-weight: bold;
     font-family: cursive;
-    font-size: 2rem;
+    font-size: 2.2rem;
     animation: container 1s ease 1;
     display: flex;
     justify-content: center;
@@ -180,13 +180,13 @@
     justify-content: center;
     font-weight: bold;
     font-family: cursive;
-    font-size: 10px;
+    font-size: 15px;
     animation: description 1s ease 1;
   }
   .fill-text {
     display: flex; /* Cambiado a inline-block para que el contenedor se ajuste al texto */
     justify-content: center;
-    font: 900 3em/1.2 "cursive";
+    font: 900 4em/1.2 "cursive";
     letter-spacing: 2px;
     padding: 1px;
     color: transparent; /* Cambiado de -webkit-text-fill-color */
