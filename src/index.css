@@ -23,6 +23,10 @@ body {
   #e6036d, #db4fa1,#ff6600, #58d6ec,#e4e46e, #00c3ff);
   background-size: 300%;
   padding: 0.1%;
+  cursor: url('../cursor.png') ,auto;
+}
+button {
+  cursor: url('../cursor2.png'), auto;
 }
 
 .fade-enter {

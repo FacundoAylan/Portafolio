@@ -1,24 +1,25 @@
-.container-home {
-  height: 98vh;
-  width: 99%;
-  background-image: url('../../assets/bg.jpg');
-  background-size: 100% 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  margin: 0.4%;
-  color: white;
-  overflow: hidden;
-}
+
 
 @media screen and (max-width: 480px){
+  .container-home {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/bg.jpg');
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin: 0.4%;
+    color: white;
+    overflow: hidden;
+  }
   .astronout {
     position: absolute;
     z-index: 10;
     height: 20vh;
     width: 40%;
     left: 35%;
-    bottom: 20%;
+    bottom: 15%;
     background-image: url('../../assets/astronout.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -34,39 +35,20 @@
     }
   }
   .astronout2 {
-    position: absolute;
-    z-index: 10;
-    height: 20vh;
-    width: 30%;
-    left: 35%;
-    top: 1%;
-    background-image: url('../../assets/astronout1.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    animation: traslate2 10s ease infinite;
+    opacity: 0;
   }
-  @keyframes traslate2 {
-    0%, 100% {
-      transform: scale(0.3);
-    }
-    50% {
-      transform: scale(2);
-    }
-  }
-  
   
   .container-info-home {
     position: absolute;
     z-index: 10px;
     width: 90%;
-    height: 30%;
+    height: 50%;
     margin-left: 0%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 25%;
+    top: 10%;
     left: 5%;
     background-color: #0b043094;
     border-radius: 18px;
@@ -143,8 +125,121 @@
     border-radius: 12px;
   }
 }
-
+@media  screen and (min-width: 481px) and (max-width:768px ) {
+  .container-home{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/bg.jpg');
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin: 0.4%;
+    color: white;
+    overflow: hidden;
+  }
+  .container-info-home {
+    position: absolute;
+    z-index: 20px;
+    width: 60%;
+    height: 75vh;
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1%;
+    top: 5%;
+    left: 20%;
+    background-color: #0b043094;
+    border-radius: 18px;
+    padding-top: 1%;
+    border: 0.8px solid #0dfef8;
+    overflow: hidden;
+    animation: cambiaBorde 2s ease infinite; /* Aplica la animación 'cambiaBorde' */
+  }
+  .custom-span {
+    display: flex;
+    width: 80%;
+    margin-bottom: 10px;
+    padding-left: 7%;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'cursive';
+  }
+  .saludo{
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 2rem;
+    animation: container 1s ease 1;
+    display: flex;
+    justify-content: center;
+  }
+  .full{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 10px;
+    animation: description 1s ease 1;
+  }
+  .fill-text {
+    display: flex; /* Cambiado a inline-block para que el contenedor se ajuste al texto */
+    justify-content: center;
+    font: 900 3em/1.2 "cursive";
+    letter-spacing: 2px;
+    padding: 1px;
+    color: transparent; /* Cambiado de -webkit-text-fill-color */
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: var(--stroke-width, 1px);
+    background-size: 100% 100%; /* Cambiado de 0% para que el gradiente se muestre */
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    animation: name 3s ease 1;
+  }
+  .container-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    overflow: hidden;
+  }
+  
+  .icon {
+    background: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+    font-size: 45px;
+  }
+  
+  .container-link a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 5%;
+    text-decoration: none;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+    padding: 1%;
+    border-radius: 12px;
+    animation: icons 1s ease 1;
+  }
+}
 @media screen and (min-width: 1200px){
+  .container-home {
+    height: 98vh;
+    width: 99%;
+    background-image: url('../../assets/bg.jpg');
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin: 0.4%;
+    color: white;
+    overflow: hidden;
+  }
   .astronout {
     position: absolute;
     z-index: 10;
@@ -213,19 +308,19 @@
     border: 0.8px solid #0dfef8;
     overflow: hidden;
     animation: cambiaBorde 2s ease infinite; /* Aplica la animación 'cambiaBorde' */
-}
+  }
 
-@keyframes cambiaBorde {
-    0% {
-        border: 4px solid #0dfef8; /* Borde inicial */
-    }
-    50% {
-        border: 4px solid #2ecc71; /* Borde intermedio */
-    }
-    100% {
-        border: 4px solid #0dfef8; /* Borde final */
-    }
-}
+  @keyframes cambiaBorde {
+      0% {
+          border: 4px solid #0dfef8; /* Borde inicial */
+      }
+      50% {
+          border: 4px solid #2ecc71; /* Borde intermedio */
+      }
+      100% {
+          border: 4px solid #0dfef8; /* Borde final */
+      }
+  }
 
   .custom-span {
     display: flex;

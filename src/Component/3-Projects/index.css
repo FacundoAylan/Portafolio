@@ -163,7 +163,6 @@
     background-color: #fff;
     border: 2px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
     margin-left: 2.5rem;
     border-radius: 6px;
     align-items: center;
@@ -214,7 +213,6 @@
 
 .close-btn:hover {
     transform: scale(1.1);
-    cursor: pointer;
 }
 
 .modal-content {
@@ -437,7 +435,6 @@
       background-color: #fff;
       border: 2px solid #fff;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      cursor: pointer;
       margin-left: 2.5rem;
       border-radius: 6px;
       align-items: center;
@@ -488,7 +485,6 @@
 
   .close-btn:hover {
       transform: scale(1.1);
-      cursor: pointer;
   }
 
   .modal-content {
@@ -543,10 +539,12 @@
   .container-icon a {
       margin-left: 1%;
   }
+
   .status {
       font-size: 20px;
       margin-top: 1%;
   }
+
   .icon-red {
       font-size: 45px;
       color: white;
@@ -555,5 +553,6 @@
   .icon-red:hover {
       transform: scale(1.1);
       color: #62aeef;
+      cursor: url('../../../cursor2.png');
   }
 }
