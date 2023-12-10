@@ -8,10 +8,10 @@
   .star-wars {
     overflow: hidden;
     display: flex;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 3%;
     width: 94%;
-    height: 80vh;
+    height: 70vh;
   }
   .crawl {
     width: 100%;
