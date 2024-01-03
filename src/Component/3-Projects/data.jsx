@@ -8,8 +8,8 @@ import imagen6 from './image/image_6.png';
 export const slides = [
   {
     image: imagen1,
-    title: 'Retos ',
-    rightTitle: ' de Css',
+    title: 'Retos d ',
+    rightTitle: 'e Css',
     subtitle: 'Font End',
     content: `Es un challange donde durante 100 dias voy a poner en practica 
     mis habilidades en css y react js. Actualmente me encuentro realizando esta actividades 
@@ -21,8 +21,8 @@ export const slides = [
   },
   {
     image: imagen2,
-    title: 'Padel',
-    rightTitle: ' club',
+    title: 'Pade',
+    rightTitle: 'l club',
     subtitle: 'Full-Stack',
     content: `Es una App específicamente diseñada para realizar reservas de canchas de padel(Proyecto en el que me encuntro trabajando actualmente ).     
     Tecnologías utilizadas: 
@@ -57,7 +57,7 @@ export const slides = [
       React.js, Redux, Hook,Chakra UI (Front-End). 
       Node.js, Express, PostgreSQL, Sequelize (Back-End). 
       La autenticación de usuarios se llevó a cabo mediante Auth0. En este proyecto, desempeñé un papel fundamental en el diseño de las plantillas y estilos de la página web, así como en la creación de su estructura para garantizar un inicio eficiente del trabajo. Además, asumí la responsabilidad de desarrollar y gestionar el flujo de información utilizado en cada curso, así como de llevar a cabo el control y validación de las nuevas funcionalidades implementadas.`,
-    rightSubtitle: 'React y Node js',
+    rightSubtitle: 'React y Node',
     web:'',
     github:'https://github.com/FacundoAylan/CurSort',
     status:'Deploy en proceso'
@@ -73,7 +73,7 @@ export const slides = [
    El Desarrollo de la pagina web se realizo utilizando: 
           Front -End ( React js , Redux, Hook, CSS puro) .
           Back-End ( Node.js  junto a Express, PostgreSQL y Sequelize).`,
-    rightSubtitle: 'React y Node js',
+    rightSubtitle: 'React y Node',
     web:'https://video-gamer-pi.vercel.app/',
     github:'https://github.com/FacundoAylan/VideoGamerPi',
     status:'Deploy del Back-End en proceso'

@@ -44,7 +44,9 @@ const Projects = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`slide ${index === slideNumber ? 'active' : ''}`}
+              className={`slide ${
+                index === slideNumber ? 'active' : 'disabled'
+              }`}
             >
               <img src={slide.image} alt="" />
               <div className="left-info">
@@ -53,7 +55,11 @@ const Projects = () => {
                 </div>
                 <div className="content">
                   <h3>{slide.subtitle}</h3>
-                  <p className={index === slideNumber ? 'description' : ''}>
+                  <p
+                    className={
+                      index === slideNumber ? 'description' : 'disabled'
+                    }
+                  >
                     {slide.content}
                   </p>
                   <button className="btn" onClick={handleOpenModal}>
@@ -66,9 +72,9 @@ const Projects = () => {
                 <h3>{slide.rightSubtitle}</h3>
               </div>
               {isModalOpen && (
-                <div className={index === slideNumber ? 'modal' : ''}>
+                <div className={index === slideNumber ? 'modal' : 'disabled'}>
                   <button
-                    className={index === slideNumber ? 'close-btn' : ''}
+                    className={index === slideNumber ? 'close-btn' : 'disabled'}
                     onClick={handleCloseModal}
                   >
                     <FaTimes size="3rem" color="red" />
@@ -81,21 +87,29 @@ const Projects = () => {
                     >
                       {slide.content}|
                     </h2>
-                    <div className={ index === slideNumber? 'red': 'disabled'}>
-                      <h2                       
+                    <div className={index === slideNumber ? 'red' : 'disabled'}>
+                      <h2
                         className={
                           index === slideNumber ? 'status' : 'disabled'
-                        }>
-                          {slide.status}
-                        </h2>
-                        <div className={ index === slideNumber? 'container-icon': 'disabled'}>
-                          <a href={slide.github} target="_blank" rel="noreferrer">
-                            <BsGithub className='icon-red' style={{fontSize:'40px'}}/>
-                          </a>
-                          <a href={slide.web} target="_blank" rel="noreferrer">
-                            <BiWorld className='icon-red'/>
-                          </a>
-                        </div>
+                        }
+                      >
+                        {slide.status}
+                      </h2>
+                      <div
+                        className={
+                          index === slideNumber ? 'container-icon' : 'disabled'
+                        }
+                      >
+                        <a href={slide.github} target="_blank" rel="noreferrer">
+                          <BsGithub
+                            className="icon-red"
+                            style={{ fontSize: '40px' }}
+                          />
+                        </a>
+                        <a href={slide.web} target="_blank" rel="noreferrer">
+                          <BiWorld className="icon-red" />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
