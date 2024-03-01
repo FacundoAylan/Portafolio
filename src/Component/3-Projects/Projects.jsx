@@ -17,7 +17,7 @@ const Projects = () => {
       backgroundSize='100% 100%'
       backgroundRepeat='no-repeat'
       backgroundPosition='center'
-      paddingTop='4%'
+      paddingTop='2%'
       paddingBottom='2%'
     >
       <Text 
