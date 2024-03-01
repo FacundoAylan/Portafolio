@@ -35,11 +35,11 @@ const App = () => {
       <Box width='100%' height='100vh' id='home'>
         <HomePage />
       </Box>
-      <Box width='100%' minHeight='100vh' id='projects'>
-        <Project />
-      </Box>
       <Box width='100%' height='100vh' id='skills' className="animated-element">
         <Skills />
+      </Box>
+      <Box width='100%' minHeight='100vh' id='projects'>
+        <Project />
       </Box>
     </Flex>
   );
