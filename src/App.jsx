@@ -1,29 +1,47 @@
-import React from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import NavBar from './Component/1-NavBar/NavBar';
 import HomePage from './Component/2-HomePage/HomePage';
 import Project from './Component/3-Projects/Projects';
 import Skills from './Component/4-Skills/Skills';
-import NotFound from  './Component/5-NotFound/NotFound';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import './index.css';
+import { Box, Flex } from '@chakra-ui/react';
 
 const App = () => {
-  const location = useLocation();
-  const showNavBar = ['/', '/Project', '/Skills'];
+
+  const handleButtonClick = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   return (
-    <TransitionGroup className="transition-group">
-      {showNavBar.includes(location.pathname) && <NavBar />}
-      <CSSTransition key={location.key} classNames="fade" timeout={300}>
-        <Routes location={location}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/Project" element={<Project />} />
-          <Route path="/Skills" element={<Skills />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </CSSTransition>
-    </TransitionGroup>
+    <Flex 
+      width ='100%'
+      height ='auto'
+      flexDirection ='column'
+      position ='relative'
+      padding='0'
+      margin='0'
+    >
+      <Box 
+        width='100%' 
+        height={{base:'5%', lg:'8%'}} 
+        position='fixed' 
+        zIndex='100'
+        bottom={{base:2,sm:'94%', lg:'92%'}}
+      >
+        <NavBar handleButtonClick={handleButtonClick}/>
+      </Box>
+      <Box width='100%' height='100vh' id='home'>
+        <HomePage />
+      </Box>
+      <Box width='100%' minHeight='100vh' id='projects'>
+        <Project />
+      </Box>
+      <Box width='100%' height='100vh' id='skills' className="animated-element">
+        <Skills />
+      </Box>
+    </Flex>
   );
 };
 

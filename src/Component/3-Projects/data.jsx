@@ -7,22 +7,8 @@ import imagen6 from './image/image_6.png';
 
 export const slides = [
   {
-    image: imagen1,
-    title: 'Retos d ',
-    rightTitle: 'e Css',
-    subtitle: 'Font End',
-    content: `Es un challange donde durante 100 dias voy a poner en practica 
-    mis habilidades en css y react js. Actualmente me encuentro realizando esta actividades 
-    obtenidas de la pagina https://100dayscss.com/days/1/ para mejorar mis habilidades y conocimientos.`,
-    rightSubtitle: 'React y Css',
-    web:'https://challenge-100-days.vercel.app/',
-    github:'https://github.com/FacundoAylan/Challenge_100_days',
-    status:''
-  },
-  {
     image: imagen2,
-    title: 'Pade',
-    rightTitle: 'l club',
+    title: 'Padel club',
     subtitle: 'Full-Stack',
     content: `Es una App específicamente diseñada para realizar reservas de canchas de padel(Proyecto en el que me encuntro trabajando actualmente ).     
     Tecnologías utilizadas: 
@@ -36,8 +22,7 @@ export const slides = [
   },
   {
     image: imagen3,
-    title: 'Wea',
-    rightTitle: 'ther',
+    title: 'Weather',
     subtitle: 'Front-End',
     content: `Aplición web diseñada con React js, en las cual vas a poder consultar el clima de tu cuidad,
     esta aplicacion fue creada solo con css y uso de una api externa sobre el clima.`,
@@ -48,8 +33,7 @@ export const slides = [
   },
   {
     image: imagen4,
-    title: 'Cur',
-    rightTitle: 'sort',
+    title: 'Cursort',
     subtitle: 'Full-stack',
     content: `Full Stack Developer - Cursort (Proyecto grupal, diciembre 2022- enero 2023) Henry Bootcamp. 
       Página web de venta de cursos que incluye funcionalidades como búsquedas, filtrados, ordenamientos, creación de cursos, métodos de pagos, capacidad de contacto mediante email y autenticación de usuarios.  
@@ -64,8 +48,7 @@ export const slides = [
   },
   {
     image: imagen5,
-    title: 'Video',
-    rightTitle: 'gamer',
+    title: 'Videogamer',
     subtitle: 'Full-Stack',
     content: `Full Stack Web Developer - Videogamers App (Proyecto llevados a cabo en un mes)
     Henry Bootcamp, Buenos Aires, Argentina.
@@ -78,23 +61,9 @@ export const slides = [
     github:'https://github.com/FacundoAylan/VideoGamerPi',
     status:'Deploy del Back-End en proceso'
   },
-  // {
-  //   image: 'https://i.ibb.co/NmTZDkk/videogmames.png',
-  //   title: 'Coun',
-  //   rightTitle: 'try',
-  //   subtitle: 'Full-Stack',
-  //   content: `Full Stack Web Developer - Videogamers App y Country App (Proyectos llevados a cabo un mes cada uno)
-  //   Henry Bootcamp, Buenos Aires, Argentina.
-  //  En esta pagina web me encargue de diseñar y desarrollar una App de videojuegos que incluía: búsquedas, filtrados, ordenamientos y creación de los mismos.
-  //  El Desarrollo de la pagina web se realizo utilizando: 
-  //         Front -End ( React js , Redux, Hook, CSS puro) .
-  //         Back-End ( Node.js  junto a Express, PostgreSQL y Sequelize).`,
-  //   rightSubtitle: 'React y Node js',
-  // },
   {
     image: imagen6,
-    title: 'Mind m',
-    rightTitle: 'y emotion',
+    title: 'Mind my emotion',
     subtitle: 'Font-End',
     content: `Es una App específicamente diseñada para ayudar a jóvenes y adultos a identificar 
     y comprender su estado emocional. La misma está destinada para brindar apoyo a la comunidad 

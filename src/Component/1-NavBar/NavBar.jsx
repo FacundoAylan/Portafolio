@@ -1,44 +1,50 @@
+import { Box, Flex, Button, Icon, Text } from '@chakra-ui/react';
 import { FaHome, FaBriefcase, FaCode } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
-import './index.css';
 
-const NavBar = () => {
+
+const NavBar = ({handleButtonClick}) => {
   return (
-    <div className="Container_navbar">
-      <div className="Container-button">
-        <button className="Home">
-          <div className="Tooltip-home">Home</div>
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? 'active-navbar' : 'disable')}
-          >
-            <FaHome className="icons" />
-          </NavLink>
-        </button>
-      </div>
-      <div className="Container-button">
-        <button className="Home">
-          <div className="Tooltip-home">Projects</div>
-          <NavLink
-            to="/Project"
-            className={({ isActive }) => (isActive ? 'active-navbar' : 'disable')}
-          >
-            <FaBriefcase className="icons" />
-          </NavLink>
-        </button>
-      </div>
-      <div className="Container-button">
-        <button className="Home">
-          <div className="Tooltip-home">Skill</div>
-          <NavLink
-            to="/Skills"
-            className={({ isActive }) => (isActive ? 'active-navbar' : 'disable')}
-          >
-            <FaCode className="icons" />
-          </NavLink>
-        </button>
-      </div>
-    </div>
+    <Flex 
+      width='100%' 
+      height='100%' 
+      justifyContent={{base:'center',sm:'flex-end',lg:'flex-end'}} 
+      gap={{lg:'2'}} 
+      padding={{lg:'.5%'}}
+    >
+        <Button 
+          backgroundColor='transparent' 
+          color='#ea63fe'
+          fontWeight='800'
+          textTransform='uppercase'
+          _hover={{color:'#0dfcf7'}}
+          onClick={() => handleButtonClick('home')}
+        >
+          <Icon as={FaHome} boxSize={8} color='#e32451' display={{base:'block', sm:'none', lg:'none'}}/>
+          <Text display={{base:'none', sm:'block', lg:'block'}}>Home</Text>
+        </Button>
+        <Button
+          backgroundColor='transparent' 
+          color='#ea63fe'
+          fontWeight='800'
+          textTransform='uppercase'
+          _hover={{color:'#0dfcf7'}}
+          onClick={() => handleButtonClick('projects')}
+        >
+          <Icon as={FaBriefcase} boxSize={8} color='#e32451' display={{base:'block',sm:'none', lg:'none'}}/>
+          <Text display={{base:'none', sm:'block', lg:'block'}}>Projects</Text>
+        </Button>
+        <Button
+          backgroundColor='transparent' 
+          color='#ea63fe'
+          fontWeight='800'
+          textTransform='uppercase'
+          _hover={{color:'#0dfcf7'}}
+          onClick={() => handleButtonClick('skills')}
+        >
+          <Icon as={FaCode} boxSize={8} color='#e32451' display={{base:'block', sm:'none', lg:'none'}}/>
+          <Text display={{base:'none', sm:'block', lg:'block'}}>Skill</Text>
+        </Button>
+    </Flex>
   );
 };
 

@@ -13,148 +13,138 @@ import git from './skills_image/git.svg';
 import github from './skills_image/github.svg';
 import linux from './skills_image/linux.svg';
 import windows from './skills_image/windows.svg';
-import './index.css';
+import { Box, Flex, Text, keyframes } from '@chakra-ui/react';
+import imagen from '../../assets/contact.jpg';
+import CardSkills from './boxSkills';
 
 const Skills = () => {
 
+  const front = [
+    {name:'css', icon:css},
+    {name:'html', icon:html}, 
+    {name:'javascript',icon:javascript}, 
+    {name: 'react js', icon:react}, 
+    {name:'redux', icon:redux}, 
+    {name: 'react native', icon:react}, 
+    {name: 'chakra ui', icon:chakraui}
+  ]
+  const back = [
+    {name:'node js',icon:node}, 
+    {name:'express',icon:express}, 
+    {name:'postgres',icon:postgres}, 
+    {name:'firebase',icon:firebase}
+  ]
+  const extra = [
+    {name:'git',icon:git}, 
+    {name:'git-hub',icon:github}, 
+    {name:'linux',icon:linux}, 
+    {name:'windows',icon:windows}
+  ]
+
+  const traslate = keyframes`
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  `;
+
   return (
-    <div className="container-skills ">
-      <div className="star-wars">
-        <div className="crawl">
-          <span className="title">Front-End</span>
-          <div className="skills">
-            <div className="containerImg">
-              <span class="image-description">CSS</span>
-              <img
-                src={css}
-                alt="CSS3"
-                className="image"
-              />
-            </div>
-            <div className="containerImg">
-              <span class="image-description">HTML</span>
-              <img
-                src={html}
-                alt="HTML5"
-                className="image"
-              />
-            </div>
-            <div className="containerImg">
-              <span class="image-description">Java Script</span>
-              <img
-                src={javascript}
-                alt="JavaScript"
-                className="image"
-              />
-            </div>
-            <div className="containerImg">
-              <span class="image-description">React js.</span>
-              <img
-                src={react}
-                alt="React"
-                className="image"
-              />
-            </div>
-            <div className="containerImg">
-              <span class="image-description">Redux</span>
-              <img
-                src={redux}
-                alt="Redux"
-                className="image"
-              />
-            </div>
-            <div className="containerImg">
-              <span class="image-description">Chackra UI</span>
-              <img
-                src={chakraui}
-                alt="Chakra UI"
-                className="image"
-                style={{border:'0px', borderRadius:'200px', padding:'0'}}
-              />
-            </div>
-            <div className="containerImg">
-              <span class="image-description">React Native</span>
-              <img
-                src={react}
-                alt="React native"
-                className="image"
-              />
-            </div>
-          </div>
-          <span className="title">Back-End</span>
-          <div className="skills">
-            <div className="containerImg">
-              <span class="image-description">Node Js.</span>
-              <img
-                src={node}
-                alt="Node.js"
-                className="image"
-              />
-            </div>
-            <div className="containerImg">
-              <span class="image-description">Express Js.</span>
-              <img
-                src={express}
-                alt="Express.js"
-                className="image"
-              />
-            </div>
-            <div className="containerImg">
-              <span class="image-description">Postgres SQL</span>
-              <img
-                src={postgres}
-                alt="PostgreSQL"
-                className="image"
-              />
-            </div>
-            <div className="containerImg">
-              <span class="image-description">Firebase</span>
-              <img
-                src={firebase}
-                alt="Firebase"
-                className="image"
-              />
-            </div>
-          </div>
-          <span className="title1">Otras herramientas</span>
-          <div className="skills1">
-            <div className="containerImg">
-              <span class="image-description">GIT</span>
-              <img
-                src={git}
-                alt="CSS3"
-                className="image"
-              />
-            </div>
-            <div className="containerImg">
-              <span class="image-description">GIT-HUB</span>
-              <img
-                src={github}
-                alt="HTML5"
-                className="image"
-              />
-            </div>
-            <div className="containerImg">
-              <span class="image-description">LINUX</span>
-              <img
-                src={linux}
-                alt="JavaScript"
-                className="image"
-              />
-            </div>
-            <div className="containerImg">
-              <span class="image-description">WINDOWS</span>
-              <img
-                src={windows}
-                alt="React"
-                className="image"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <span className='nota'>icons of: https://iconos8.es/icons</span>
-    </div>
+    <Box 
+      width='100%' 
+      height='100vh' 
+      overflow='hidden' 
+      backgroundImage={imagen}
+      backgroundSize= {{base:'250% 100%',sm:'350% 100%', lg:'100% 100%'}}
+      backgroundPosition= 'center'
+      backgroundRepeat= 'no-repeat'
+      position='relative'
+    >
+      <Flex
+        position='absolute' 
+        width={{base:'96%',sm:'64%', lg:'50%'}}
+        height={{base:'80%', sm:'94%', lg:'80%'}}
+        left={{base:'2%',sm:'1%', lg:'5%'}} 
+        top={{base:'10%',sm:'4%', lg:'5%'}}
+        backgroundColor={{base:'trasparent',lg:'transparent'}}
+        boxShadow = 'inset 0 0 10px 1px #0dfcf9'
+        overflow='hidden'
+        borderRadius={{base:'12px',sm:'18px',lg:'18px'}}
+        border='2px solid #0dfcf9'
+        flexDirection='column'
+        gap={3}
+        justifyContent='center'
+        alignItems='center'
+        padding='1%'
+      >
+        <Text 
+          textTransform='uppercase' 
+          color='#ea63fe'
+          fontWeight='bold'
+          fontSize='1rem'
+          textAlign='center'
+          animation={`${traslate} 1s ease infinite`}
+        >
+          Front-End
+        </Text>
+        <Flex 
+          flexWrap='wrap'
+          flexDirection='row' 
+          width='100%' 
+          height='auto'
+          justifyContent='center'
+          borderBottom='4px double #0dfcf9'
+        >
+          {
+            front.map((icons) =>{
+              return <CardSkills name={icons.name} icons={icons.icon}/>
+            })
+
+          }
+        </Flex>
+        <Text
+          textTransform='uppercase' 
+          color='#ea63fe'
+          fontWeight='bold'
+          fontSize='1rem'
+          textAlign='center'
+          animation={`${traslate} 1s ease infinite`}
+        >
+          Back-End
+        </Text>
+        <Flex 
+          flexDirection='row' 
+          width='100%' 
+          height='auto' 
+          justifyContent='center'
+          borderBottom='4px double #0dfcf9' 
+          padding='1%'
+        >
+          {
+            back.map((icons) =>{
+              return <CardSkills name={icons.name} icons={icons.icon}/>
+            })
+
+          }
+        </Flex>
+        <Text
+          textTransform='uppercase' 
+          color='#ea63fe'
+          fontWeight='bold'
+          fontSize='1rem'
+          textAlign='center'
+          animation={`${traslate} 1s ease infinite`}
+        >
+          Herramientas
+        </Text>
+        <Flex flexDirection='row' width='100%' height='auto' justifyContent='center'>
+          {
+            extra.map((icons) =>{
+              return <CardSkills name={icons.name} icons={icons.icon}/>
+            })
+
+          }
+        </Flex>
+
+      </Flex>
+    </Box>
   );
 };
 
