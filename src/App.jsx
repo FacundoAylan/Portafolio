@@ -5,6 +5,7 @@ import Skills from './Component/4-Skills/Skills';
 import { Box, Flex } from '@chakra-ui/react';
 
 const App = () => {
+    console.log("Hola");
     const handleButtonClick = (id) => {
         const element = document.getElementById(id);
         if (element) {
