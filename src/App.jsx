@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import NavBar from './Component/1-NavBar/NavBar';
 import HomePage from './Component/2-HomePage/HomePage';
 import Project from './Component/3-Projects/Projects';
