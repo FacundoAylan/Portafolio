@@ -20,18 +20,7 @@ const NavBar = ({handleButtonClick}) => {
           onClick={() => handleButtonClick('home')}
         >
           <Icon as={FaHome} boxSize={8} color='#e32451' display={{base:'block', sm:'none', lg:'none'}}/>
-          <Text display={{base:'none', sm:'block', lg:'block'}}>Home</Text>
-        </Button>
-        <Button
-          backgroundColor='transparent' 
-          color='#ea63fe'
-          fontWeight='800'
-          textTransform='uppercase'
-          _hover={{color:'#0dfcf7'}}
-          onClick={() => handleButtonClick('projects')}
-        >
-          <Icon as={FaBriefcase} boxSize={8} color='#e32451' display={{base:'block',sm:'none', lg:'none'}}/>
-          <Text display={{base:'none', sm:'block', lg:'block'}}>Projects</Text>
+          <Text display={{base:'none', sm:'block', lg:'block'}}>Inicio</Text>
         </Button>
         <Button
           backgroundColor='transparent' 
@@ -42,7 +31,19 @@ const NavBar = ({handleButtonClick}) => {
           onClick={() => handleButtonClick('skills')}
         >
           <Icon as={FaCode} boxSize={8} color='#e32451' display={{base:'block', sm:'none', lg:'none'}}/>
-          <Text display={{base:'none', sm:'block', lg:'block'}}>Skill</Text>
+          <Text display={{base:'none', sm:'block', lg:'block'}}>Skills</Text>
+        </Button>
+
+        <Button
+            backgroundColor='transparent' 
+            color='#ea63fe'
+            fontWeight='800'
+            textTransform='uppercase'
+            _hover={{color:'#0dfcf7'}}
+            onClick={() => handleButtonClick('projects')}
+        >
+            <Icon as={FaBriefcase} boxSize={8} color='#e32451' display={{base:'block',sm:'none', lg:'none'}}/>
+            <Text display={{base:'none', sm:'block', lg:'block'}}>Proyectos</Text>
         </Button>
     </Flex>
   );

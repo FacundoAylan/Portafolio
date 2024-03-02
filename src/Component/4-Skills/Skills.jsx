@@ -93,8 +93,8 @@ const Skills = () => {
           borderBottom='4px double #0dfcf9'
         >
           {
-            front.map((icons) =>{
-              return <CardSkills name={icons.name} icons={icons.icon}/>
+            front.map((icons, index) =>{
+              return <CardSkills key={index} id={index} name={icons.name} icons={icons.icon}/>
             })
 
           }

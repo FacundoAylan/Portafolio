@@ -1,14 +1,9 @@
-import { useState } from 'react';
-import { FaChevronLeft, FaChevronRight, FaTimes } from 'react-icons/fa';
-import { BsGithub } from 'react-icons/bs';
-import { BiWorld } from 'react-icons/bi';
 import { slides } from './data';
 import { Box, Flex, Text } from '@chakra-ui/react';
 import background from './image/background.png'
 import Cardprojects from './card';
 
 const Projects = () => {
-  console.log(slides)
   return (
     <Box 
       width='100%' 
@@ -27,7 +22,7 @@ const Projects = () => {
         fontWeight='bold'
         textAlign='center'
       >
-        Projectos
+        Proyectos
       </Text>
       <Flex 
         width='100%' 
@@ -41,13 +36,13 @@ const Projects = () => {
         {slides.map((slide, index) => {
           return (
             <Cardprojects
+              key={index}
               image={slide.image} 
               title={slide.title} 
               subtitle={slide.subtitle}
               rigth={slide.rightSubtitle}
             />
           )
-          
         })}
       </Flex>
     </Box>

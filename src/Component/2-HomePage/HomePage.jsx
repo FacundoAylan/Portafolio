@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import documentoPDF from './cv.pdf';
 import imagen from '../../assets/bg.jpg';
 import astronauta1 from '../../assets/astronout.png'
@@ -56,6 +56,7 @@ const HomePage = () => {
           backgroundColor= '#0b043094'
           borderRadius= '18px'
           border= '0.8px solid #0dfef8'
+          boxShadow = 'inset 0 0 10px 1px #0dfcf9'
           color='white'
           position='relative'
           flexDirection='column'
@@ -73,7 +74,6 @@ const HomePage = () => {
             fontWeight="900"
             fontSize={{base:'2rem', lg:"3em"}}
             lineHeight="1.2"
-            fontFamily="cursive"
             letterSpacing="2px"
             padding="1px"
             color="transparent"

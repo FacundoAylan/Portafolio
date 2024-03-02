@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text, border, keyframes } from "@chakra-ui/react";
+import { Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
 
 const CardSkills = ({name, icons}) => {
@@ -22,7 +22,7 @@ const CardSkills = ({name, icons}) => {
         key={name}
         alt={name}
         boxSize={{base:'3rem', sm:'1.5rem', lg:'3rem'}} 
-        objectFit='cover'  
+        objectFit='cover'
       />
       <Text 
         width='100%'
