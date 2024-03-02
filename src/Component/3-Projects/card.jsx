@@ -16,8 +16,8 @@ const Cardprojects = ({ id, image, title, subtitle, right }) => {
 
     return (
         <Box
+            w="20%"
             h="100%"
-            w="100%"
             backgroundColor='#0b5c92'
             border='2px double white'
             borderRadius='12px'
