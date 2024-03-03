@@ -66,7 +66,7 @@ const App = () => {
         width="20%"
         top={{ base: -1, lg: 2 }}
         left={{ base: '40%', lg: 2 }}
-        display={{ base: 'block', sm: 'none', lg: 'block' }}
+        display={{ base: 'none', sm: 'none', lg: 'block' }}
         animation={`${traslate2} 4s ease infinite`}
       />
       <Box
