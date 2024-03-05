@@ -9,10 +9,12 @@ import {
   ModalBody,
   IconButton,
   Button,
+  AspectRatio,
 } from '@chakra-ui/react';
 import { FaPlay } from 'react-icons/fa';
 
-const Cardprojects = ({ image, title, subtitle, right, id }) => {
+const Cardprojects = ({ image, title, subtitle, right, video, id }) => {
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -66,31 +68,33 @@ const Cardprojects = ({ image, title, subtitle, right, id }) => {
       <Text>{subtitle}</Text>
       <Text>{right}</Text>
       <Modal isOpen={isModalOpen} onClose={closeModal} size="4xl">
-        <ModalOverlay />
         <ModalContent
           width="100%"
           height="80%"
           overflow="hidden"
           position="relative"
+          padding={0}
         >
-          <ModalBody>
+          <ModalBody padding={0} margin={0} backgroundColor='#071f45'>
             <Button
               onClick={closeModal}
               right={2}
               position="absolute"
               color="red"
               fontWeight="bold"
+              backgroundColor='transparent'
+              border={0}
+              _hover={{border:0, backgroundColor:'transparent'}}
             >
               X
             </Button>
-            <iframe
-              width="100%"
-              height="85%"
-              src="https://www.youtube.com/watch?v=ntCZjb_AAWE&list=RDrIcZ6X0jIl4&index=8"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+              <iframe
+                src={video}
+                frameborder="0" 
+                allow="autoplay; 
+                fullscreen" allowfullscreen
+                style={{ width: '100%', height: '100%',margin:0 }}
+              />
           </ModalBody>
         </ModalContent>
       </Modal>

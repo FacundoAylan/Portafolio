@@ -49,6 +49,7 @@ const Projects = () => {
               title={slide.title}
               subtitle={slide.subtitle}
               right={slide.rightSubtitle}
+              video={slide.video}
               id={index}
             />
           );
