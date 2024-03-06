@@ -7,6 +7,7 @@ import chakraui from './skills_image/chakraui.svg';
 import node from './skills_image/node.svg';
 import express from './skills_image/express.svg';
 import postgres from './skills_image/postgres.svg';
+import python from './skills_image/python.svg'
 import firebase from './skills_image/firebase.svg';
 import git from './skills_image/git.svg';
 import github from './skills_image/github.svg';
@@ -42,6 +43,7 @@ const Skills = () => {
     { name: 'node js', icon: node },
     { name: 'express', icon: express },
     { name: 'postgres', icon: postgres },
+    {name: 'python', icon: python},
     { name: 'firebase', icon: firebase },
   ];
   const extra = [

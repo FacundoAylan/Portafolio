@@ -13,22 +13,22 @@ export const slides = [
     subtitle: 'Fullstack',
     content: `Aplición web diseñada con React js, en las cual vas a poder consultar el clima de tu cuidad,
     esta aplicacion fue creada solo con css y uso de una api externa sobre el clima.`,
-    rightSubtitle: 'React js, python y firebase',
-    github:'https://github.com/FacundoAylan/weather',
+    rightSubtitle: 'React js, Python, firebase',
+    github:'https://github.com/FacundoAylan/lavadero',
     video:'https://player.vimeo.com/video/919405266?h=c46cdc3062'
   },
   {
     image: imagen6,
     title: 'Mind my emotion',
-    subtitle: 'Font-End',
-    rightSubtitle: 'React Native',
+    subtitle: 'FontEnd',
+    rightSubtitle: 'React Native,Python, Firebase',
     github:'https://github.com/FacundoAylan/mindMyEmotions',
     video:'https://player.vimeo.com/video/918885871?h=f12eefdd28'
   },
   {
     image: imagen3,
     title: 'Weather',
-    subtitle: 'Front-End',
+    subtitle: 'FrontEnd',
     content: `Aplición web diseñada con React js, en las cual vas a poder consultar el clima de tu cuidad,
     esta aplicacion fue creada solo con css y uso de una api externa sobre el clima.`,
     rightSubtitle: 'React js',
@@ -46,16 +46,16 @@ export const slides = [
   {
     image: imagen4,
     title: 'Cursort',
-    subtitle: 'Full-stack',
-    rightSubtitle: 'React y Node',
+    subtitle: 'FullStack',
+    rightSubtitle: 'React, Node Js',
     github:'https://github.com/FacundoAylan/CurSort',
     video:''
   },
   {
     image: imagen5,
     title: 'Videogamer',
-    subtitle: 'Full-Stack',
-    rightSubtitle: 'React y Node',
+    subtitle: 'FullStack',
+    rightSubtitle: 'React, Node Js',
     github:'https://github.com/FacundoAylan/VideoGamerPi',
     video:''
   },

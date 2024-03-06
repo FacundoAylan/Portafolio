@@ -50,6 +50,7 @@ const Projects = () => {
               subtitle={slide.subtitle}
               right={slide.rightSubtitle}
               video={slide.video}
+              github={slide.github}
               id={index}
             />
           );
