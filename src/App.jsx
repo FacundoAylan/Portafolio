@@ -2,20 +2,11 @@ import NavBar from './Component/1-NavBar/NavBar';
 import HomePage from './Component/2-HomePage/HomePage';
 import Project from './Component/4-Projects/Projects';
 import Skills from './Component/3-Skills/Skills';
-import { Box, Flex, Image, keyframes } from '@chakra-ui/react';
-import astronauta1 from './assets/astronout.png';
-import astronauta2 from './assets/astronout1.png';
+import { Box, Flex} from '@chakra-ui/react';
 import principal from './assets/principal.jpg';
 import { useState } from 'react';
 
-const traslate = keyframes`
-0%, 100% { transform: translateY(0); }
-50% { transform: translateY(-20px); }
-`;
-const traslate2 = keyframes`
-0%, 100% { transform: scale(0.5); }
-50% { transform: scale(1); }
-`;
+
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -45,30 +36,6 @@ const App = () => {
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
     >
-      <Image
-        position="fixed"
-        src={astronauta1}
-        alt="astronauta 1"
-        height="20vh"
-        width="20%"
-        top="80vh"
-        right={2}
-        animation={`${traslate} 4s ease infinite`}
-        display={{ base: 'none', lg: 'block' }}
-        zIndex={200}
-      />
-
-      <Image
-        src={astronauta2}
-        alt="astronauta 2"
-        position="absolute"
-        height="20vh"
-        width="20%"
-        top={{ base: -1, lg: 2 }}
-        left={{ base: '40%', lg: 2 }}
-        display={{ base: 'none', sm: 'none', lg: 'block' }}
-        animation={`${traslate2} 4s ease infinite`}
-      />
       <Box
         width="100%"
         height={{ base: '5%', lg: '8%' }}

@@ -60,7 +60,7 @@ const Skills = () => {
         position="absolute"
         width={{ base: '96%', sm: '64%', lg: '70%' }}
         height={{ base: '80%', sm: '94%', lg: '80%' }}
-        left={{ base: '2%', sm: '1%', lg: '5%' }}
+        left={{ base: '2%', sm: '1%', lg: '15%' }}
         top={{ base: '10%', sm: '4%', lg: '10%' }}
         backgroundColor={{ base: 'trasparent', lg: 'transparent' }}
         boxShadow="inset 0 0 10px 1px #0dfcf9"
