@@ -12,6 +12,7 @@ const animation = keyframes`
   }
 `;
 
+
 const HomePage = () => {
   return (
     <Box
@@ -22,21 +23,27 @@ const HomePage = () => {
       justifyContent="center"
       alignItems="center"
     >
+      <Box
+        padding='0.3%'
+        borderRadius='18px'
+        width={{ base: '90%', lg: '60%' }}
+        height={{ base: '70%', sm: '75%', lg: '55vh' }}
+        bgImage="linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f)"
+        boxShadow="0 0 10px rgba(9, 241, 184, 0.5), 0 0 10px rgba(0, 162, 255, 0.5), 0 0 10px rgba(255, 0, 210, 0.5), 0 0 10px rgba(254, 217, 15, 0.5)"
+        animation={`${animation} 0.8s ease-in-out`}
+      >
       <Flex
         padding="1%"
         overflow="hidden"
-        width={{ base: '90%', lg: '60%' }}
-        height={{ base: '70%', sm: '75%', lg: '55vh' }}
-        backgroundColor="trasnparent"
+        width='100%'
+        height='100%'
+        backgroundColor="#08244c"
         borderRadius="18px"
-        border="2px solid #0dfef8"
-        boxShadow="inset 0 0 10px 1px #0dfcf9"
         color="white"
         position="relative"
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
-        animation={`${animation} 0.8s ease-in-out`}
       >
         <Text
           fontWeight="bold"
@@ -126,6 +133,7 @@ const HomePage = () => {
           </Link>
         </Flex>
       </Flex>
+        </Box>
     </Box>
   );
 };

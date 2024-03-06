@@ -108,7 +108,7 @@ const Skills = () => {
           fontWeight="bold"
           fontSize="1rem"
           textAlign="center"
-          //animation={`${traslate} 1s ease infinite`}
+          animation={`${traslate} 1s ease infinite`}
         >
           Back-End
         </Text>
@@ -132,7 +132,7 @@ const Skills = () => {
           fontWeight="bold"
           fontSize="1rem"
           textAlign="center"
-          //animation={`${traslate} 1s ease infinite`}
+          animation={`${traslate} 1s ease infinite`}
         >
           Herramientas
         </Text>
