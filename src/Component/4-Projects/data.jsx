@@ -20,7 +20,7 @@ export const slides = [
     image: imagen6,
     title: 'Mind my emotion',
     subtitle: 'FontEnd',
-    content: `Aplición mobil de ayuda spcologica en niños y jovenes`,
+    content: `Aplición movil de ayuda spcologica en niños y jovenes`,
     rightSubtitle: 'React Native,Python, Firebase',
     github:'https://github.com/FacundoAylan/mindMyEmotions',
     video:'https://player.vimeo.com/video/918885871?h=f12eefdd28'
