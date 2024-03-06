@@ -4,10 +4,10 @@ import Cardprojects from './card';
 
 const animation = keyframes`
   from{
-    transform:translateX(100%)
+    transform:translateY(100%)
   }
   to{
-    transform:translateX(0)
+    transform:translateY(0)
   }
 `
 const animation2 = keyframes`
@@ -41,7 +41,7 @@ const Projects = () => {
         alignItems='center'
         gap={{ base: 3, lg: 8 }}
         marginTop="2%"
-        animation={`${animation} 1.5s ease`}
+        animation={`${animation} 1s ease`}
       >
         {slides.map((slide, index) => {
           return (
