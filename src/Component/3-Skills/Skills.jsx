@@ -58,10 +58,10 @@ const Skills = () => {
       <Flex
         animation={`${animation} 1s ease`}
         position="absolute"
-        width={{ base: '96%', sm: '64%', lg: '70%' }}
-        height={{ base: '80%', sm: '94%', lg: '80%' }}
+        width={{ base: '96%', sm: '98%', lg: '70%' }}
+        height={{ base: '80%', sm: '86%', lg: '80%' }}
         left={{ base: '2%', sm: '1%', lg: '15%' }}
-        top={{ base: '10%', sm: '4%', lg: '10%' }}
+        top={{ base: '10%', sm: '10%', lg: '10%' }}
         backgroundColor={{ base: 'trasparent', lg: 'transparent' }}
         boxShadow="inset 0 0 10px 1px #0dfcf9"
         overflow="hidden"
@@ -77,7 +77,7 @@ const Skills = () => {
           textTransform="uppercase"
           color="#ea63fe"
           fontWeight="bold"
-          fontSize="1rem"
+          fontSize={{base:'1rem',sm:'0.8rem',lg:"1rem"}}
           textAlign="center"
           animation={`${traslate} 1s ease infinite`}
         >
@@ -106,7 +106,7 @@ const Skills = () => {
           textTransform="uppercase"
           color="#ea63fe"
           fontWeight="bold"
-          fontSize="1rem"
+          fontSize={{base:'1rem',sm:'0.8rem',lg:"1rem"}}
           textAlign="center"
           animation={`${traslate} 1s ease infinite`}
         >
@@ -130,7 +130,7 @@ const Skills = () => {
           textTransform="uppercase"
           color="#ea63fe"
           fontWeight="bold"
-          fontSize="1rem"
+          fontSize={{base:'1rem',sm:'0.8rem',lg:"1rem"}}
           textAlign="center"
           animation={`${traslate} 1s ease infinite`}
         >

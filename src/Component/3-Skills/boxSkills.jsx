@@ -5,7 +5,7 @@ const CardSkills = ({name, icons}) => {
   
   return (
     <Flex 
-      width={{base:'20%',lg:'18%' }}
+      width={{base:'20%',sm:'14%',lg:'18%' }}
       height='13vh' 
       overflow='hidden'
       borderRadius='8px'

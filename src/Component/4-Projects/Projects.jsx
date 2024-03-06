@@ -21,7 +21,7 @@ const animation2 = keyframes`
 
 const Projects = () => {
   return (
-    <Box width="100%" minHeight="100vh" paddingTop="1%" paddingBottom="2%">
+    <Box width="100%" minHeight="100vh" paddingTop={{base:'1%',sm:'5%',lg:"5%" }}paddingBottom="2%">
       <Text
         fontSize="2rem"
         textTransform="uppercase"

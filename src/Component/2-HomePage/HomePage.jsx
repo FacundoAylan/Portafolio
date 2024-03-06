@@ -24,10 +24,10 @@ const HomePage = () => {
       alignItems="center"
     >
       <Box
-        padding='0.3%'
-        borderRadius='18px'
-        width={{ base: '90%', lg: '60%' }}
-        height={{ base: '70%', sm: '75%', lg: '55vh' }}
+        padding={{base:'1%',sm:'0.5%',lg:'0.3%'}}
+        borderRadius={{base:'0',sm:'18px',lg:'18px'}}
+        width={{ base: '100%',sm:'80%', lg: '60%' }}
+        height={{ base: '100%', sm: '75%', lg: '55vh' }}
         bgImage="linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f)"
         boxShadow="0 0 10px rgba(9, 241, 184, 0.5), 0 0 10px rgba(0, 162, 255, 0.5), 0 0 10px rgba(255, 0, 210, 0.5), 0 0 10px rgba(254, 217, 15, 0.5)"
         animation={`${animation} 0.8s ease-in-out`}
@@ -38,7 +38,7 @@ const HomePage = () => {
         width='100%'
         height='100%'
         backgroundColor="#08244c"
-        borderRadius="18px"
+        borderRadius={{base:'0',sm:'18px',lg:"18px"}}
         color="white"
         position="relative"
         flexDirection="column"
