@@ -11,8 +11,7 @@ export const slides = [
     image: imagen7,
     title: 'Harmoni wisch',
     subtitle: 'Fullstack',
-    content: `Aplición web diseñada con React js, en las cual vas a poder consultar el clima de tu cuidad,
-    esta aplicacion fue creada solo con css y uso de una api externa sobre el clima.`,
+    content: `Aplición web para el manejo de reserva de lavaderos de auto`,
     rightSubtitle: 'React js, Python, firebase',
     github:'https://github.com/FacundoAylan/lavadero',
     video:'https://player.vimeo.com/video/919405266?h=c46cdc3062'
@@ -21,6 +20,7 @@ export const slides = [
     image: imagen6,
     title: 'Mind my emotion',
     subtitle: 'FontEnd',
+    content: `Aplición mobil de ayuda spcologica en niños y jovenes`,
     rightSubtitle: 'React Native,Python, Firebase',
     github:'https://github.com/FacundoAylan/mindMyEmotions',
     video:'https://player.vimeo.com/video/918885871?h=f12eefdd28'
@@ -29,8 +29,7 @@ export const slides = [
     image: imagen3,
     title: 'Weather',
     subtitle: 'FrontEnd',
-    content: `Aplición web diseñada con React js, en las cual vas a poder consultar el clima de tu cuidad,
-    esta aplicacion fue creada solo con css y uso de una api externa sobre el clima.`,
+    content: `Aplición web  en las cual vas a poder consultar el clima de tu cuidad`,
     rightSubtitle: 'React js',
     github:'https://github.com/FacundoAylan/weather',
     video:'https://player.vimeo.com/video/918882766?h=66465acb78'
@@ -47,6 +46,7 @@ export const slides = [
     image: imagen4,
     title: 'Cursort',
     subtitle: 'FullStack',
+    content: `Aplición web  en las cual vas a poder comprar cursos de progrmación.`,
     rightSubtitle: 'React, Node Js',
     github:'https://github.com/FacundoAylan/CurSort',
     video:''
@@ -55,6 +55,7 @@ export const slides = [
     image: imagen5,
     title: 'Videogamer',
     subtitle: 'FullStack',
+    content: `Aplición web  en las cual vas a poder visualizar videojuegos y sus caracteristicas`,
     rightSubtitle: 'React, Node Js',
     github:'https://github.com/FacundoAylan/VideoGamerPi',
     video:''

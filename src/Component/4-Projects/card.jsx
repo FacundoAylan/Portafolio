@@ -9,12 +9,13 @@ import {
   IconButton,
   Button,
   Icon,
-  Link
+  Link,
+  Flex
 } from '@chakra-ui/react';
 import { FaPlay } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 
-const Cardprojects = ({ image, title, subtitle, right, video, github, id }) => {
+const Cardprojects = ({ image, title, content, subtitle, right, video, github, id }) => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -27,20 +28,22 @@ const Cardprojects = ({ image, title, subtitle, right, video, github, id }) => {
   };
 
   return (
-    <Box
+    <Flex
       key={id}
-      w={{ base: '35%', lg: '20%' }}
-      h={{ base: '30vh',sm:'45vh', lg: '50vh' }}
+      w={{ base: '95%',sm:'70%', lg: '60%' }}
+      h={{ base: '20vh',sm:'45vh', lg: '35vh' }}
       backgroundColor="#07234a"
-      border="4px double white"
+      border= '4px solid #ea63fe'
+      alignItems='center'
       textAlign="center"
+      gap={4}
       color="white"
       fontWeight="bold"
       overflow="hidden"
-      _hover={{ border: '4px solid #ea63fe', transform:'scale(1.1)' }}
       position="relative"
-      borderRadius='8px'
+      borderRadius='18px'
       textTransform='uppercase'
+      paddingLeft={4}
     >
       <IconButton
         icon={<FaPlay />}
@@ -48,8 +51,8 @@ const Cardprojects = ({ image, title, subtitle, right, video, github, id }) => {
         aria-label="Reproducir video"
         fontSize="3xl"
         position="absolute"
-        top="30%"
-        left="50%"
+        top="48%"
+        left={{base:'22%',sm:'17%',lg:"22%"}}
         transform="translate(-50%, -50%)"
         cursor="pointer"
         backgroundColor="transparent"
@@ -57,30 +60,34 @@ const Cardprojects = ({ image, title, subtitle, right, video, github, id }) => {
         color="red"
         _hover={{ backgroundColor: 'transparent' }}
       />
-      <Image
-        src={image}
-        width="100%"
-        height={{base:'15vh',sm:'19vh',lg:"25vh"}}
-        borderBottom="1px solid white"
-        key={id}
-        overflow="hidden"
-      />
-      <Text fontSize={{ base: '0.8rem', lg: '1.5rem' }}
-        color="transparent"
-        bgImage="linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f)"
-        backgroundClip="text"
-        backgroundSize="100% 100%"
-        backgroundRepeat="no-repeat"
-        backgroundPosition="center bottom"
-      >{title}</Text>
-      <Text padding='1%' fontSize={{base:'0.6rem',lg:'0.9rem'}}>{subtitle}</Text>
-      <Text fontSize={{base:'0.6rem',lg:'0.9rem'}}>{right}</Text>
-      <Link 
-        href={github} 
-        target="_blank" 
-      >
-        <Icon as={FaGithub} boxSize={8} color='#0dfcf9'/>
-      </Link>
+        <Image
+          src={image}
+          width={{base:'60%',sm:'40%',lg:"40%"}}
+          height={{base:'15vh',sm:'30vh',lg:"25vh"}}
+          borderBottom="1px solid white"
+          borderRadius='8px'
+          key={id}
+          overflow="hidden"
+        />
+      <Flex flexDirection='column'>
+        <Text fontSize={{ base: '0.8rem', lg: '1.5rem' }}
+          color="transparent"
+          bgImage="linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f)"
+          backgroundClip="text"
+          backgroundSize="100% 100%"
+          backgroundRepeat="no-repeat"
+          backgroundPosition="center bottom"
+        >{title}</Text>
+        <Text padding='1%' fontSize={{base:'0.6rem',lg:'0.9rem'}}>{subtitle}</Text>
+        <Text fontSize='0.8rem' fontWeight={200}>{content}</Text>
+        <Text fontSize={{base:'0.6rem',lg:'0.9rem'}}>{right}</Text>
+        <Link 
+          href={github} 
+          target="_blank" 
+        >
+          <Icon as={FaGithub} boxSize={8} color='#0dfcf9'/>
+        </Link>
+      </Flex>
       <Modal isOpen={isModalOpen} onClose={closeModal} size="4xl">
         <ModalContent
           width="100%"
@@ -112,7 +119,7 @@ const Cardprojects = ({ image, title, subtitle, right, video, github, id }) => {
           </ModalBody>
         </ModalContent>
       </Modal>
-    </Box>
+    </Flex>
   );
 };
 

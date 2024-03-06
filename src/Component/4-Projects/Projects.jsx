@@ -35,9 +35,10 @@ const Projects = () => {
       <Flex
         width="100%"
         height="auto"
-        flexDirection="row"
+        flexDirection="column"
         flexWrap="wrap"
         justifyContent="center"
+        alignItems='center'
         gap={{ base: 3, lg: 8 }}
         marginTop="2%"
         animation={`${animation} 1.5s ease`}
@@ -47,6 +48,7 @@ const Projects = () => {
             <Cardprojects
               image={slide.image}
               title={slide.title}
+              content={slide.content}
               subtitle={slide.subtitle}
               right={slide.rightSubtitle}
               video={slide.video}
