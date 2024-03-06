@@ -96,6 +96,7 @@ const HomePage = () => {
             justifyContent="center"
             padding="10px 20px"
             gap={2}
+            _hover={{transform:'scale(1.1)'}}
           >
             <Icon as={FaCloudDownloadAlt} boxSize={7} color="#ea4aff" />
             <Text>CV</Text>
@@ -111,6 +112,7 @@ const HomePage = () => {
             justifyContent="center"
             gap={2}
             padding="10px 20px"
+            _hover={{transform:'scale(1.1)'}}
           >
             <Icon as={FaLinkedin} boxSize={7} color="#3b62f1" />
             <Text>LinkedIn</Text>
@@ -127,6 +129,7 @@ const HomePage = () => {
             justifyContent="center"
             gap={2}
             padding="10px 20px"
+            _hover={{transform:'scale(1.1)'}}
           >
             <Icon as={FaGithub} boxSize={7} color="#eb64fe" />
             <Text>Github</Text>
