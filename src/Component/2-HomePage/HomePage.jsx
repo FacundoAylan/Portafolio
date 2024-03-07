@@ -1,6 +1,7 @@
 import documentoPDF from './cv.pdf';
+import profile from '../../assets/image/profile.jpg'
 import { FaLinkedin, FaGithub, FaCloudDownloadAlt } from 'react-icons/fa';
-import { Box, Flex, Icon, Link, Text, keyframes } from '@chakra-ui/react';
+import { Box, Flex, Icon, Image, Link, Text, keyframes } from '@chakra-ui/react';
 
 const animation = keyframes`
   from {
@@ -24,7 +25,7 @@ const HomePage = () => {
       alignItems="center"
     >
       <Box
-        padding={{base:'1%',sm:'0.5%',lg:'0.3%'}}
+        padding={{base:'0',sm:'0.5%',lg:'0.3%'}}
         borderRadius={{base:'0',sm:'18px',lg:'18px'}}
         width={{ base: '100%',sm:'80%', lg: '60%' }}
         height={{ base: '100%', sm: '75%', lg: '55vh' }}
@@ -44,7 +45,15 @@ const HomePage = () => {
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
+        gap={1}
       >
+        <Image 
+          src={profile} 
+          display={{base:'block',sm:'none',lg:'none'}}
+          borderRadius='100%'
+          height='25%'
+          border='3px double #ea63fe'
+        />
         <Text
           fontWeight="bold"
           fontSize={{ base: '1.8rem', lg: '2rem' }}
@@ -80,9 +89,9 @@ const HomePage = () => {
         </Text>
         <Flex
           width={{ base: '60%', sm: '100%', lg: '100%' }}
-          flexDirection={{ base: 'column', sm: 'row', lg: 'row' }}
+          flexDirection='row'
           justifyContent="center"
-          gap={{ base: 2, lg: 10 }}
+          gap={{ base: 4,sm: 2, lg: 10 }}
           marginTop={6}
           fontWeight="bold"
         >
@@ -90,10 +99,11 @@ const HomePage = () => {
             href={documentoPDF}
             download="CV-Facundo.pdf"
             borderRadius="10px"
-            border="0.8px solid #0dfef8"
+            border={{base:'none',sm:"0.8px solid #0dfef8",lg:"0.8px solid #0dfef8"}}
             display="flex"
             alignItems="center"
             justifyContent="center"
+            flexDirection={{base:'column', sm:'row',lg:'row'}}
             padding="10px 20px"
             gap={2}
             _hover={{transform:'scale(1.1)'}}
@@ -106,8 +116,9 @@ const HomePage = () => {
             target="_blank"
             rel="noopener noreferrer"
             borderRadius="12px"
-            border="0.8px solid #0dfef8"
+            border={{base:'none',sm:"0.8px solid #0dfef8",lg:"0.8px solid #0dfef8"}}
             display="flex"
+            flexDirection={{base:'column', sm:'row',lg:'row'}}
             alignItems="center"
             justifyContent="center"
             gap={2}
@@ -123,8 +134,9 @@ const HomePage = () => {
             target="_blank"
             rel="noopener noreferrer"
             borderRadius="12px"
-            border="0.8px solid #0dfef8"
+            border={{base:'none',sm:"0.8px solid #0dfef8",lg:"0.8px solid #0dfef8"}}
             display="flex"
+            flexDirection={{base:'column', sm:'row',lg:'row'}}
             alignItems="center"
             justifyContent="center"
             gap={2}

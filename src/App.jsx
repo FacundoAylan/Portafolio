@@ -38,10 +38,10 @@ const App = () => {
     >
       <Box
         width="100%"
-        height={{ base: '5%', lg: '8%' }}
+        height={{ base: '6%',sm:'1%', lg: '8%' }}
         position="fixed"
         zIndex="100"
-        bottom={{ base: 2, sm: '94%', lg: '92%' }}
+        bottom={{ base: 0, sm: '100%', lg: '92%' }}
       >
         <NavBar handleButtonClick={handleButtonClick} />
       </Box>

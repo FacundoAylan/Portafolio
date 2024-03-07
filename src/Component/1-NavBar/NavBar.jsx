@@ -10,7 +10,7 @@ const NavBar = ({handleButtonClick}) => {
       justifyContent={{base:'center',sm:'flex-end',lg:'flex-end'}} 
       gap={{lg:'2'}} 
       padding={{lg:'.5%'}}
-      backgroundColor={{base:'trasparent',sm:'#082046',lg:'#082046'}}
+      backgroundColor={{base:'#08244c',sm:'#082046',lg:'#082046'}}
       borderBottom={{base:'none',lg:'2px double #ea63fe'}}
     >
         <Button 
