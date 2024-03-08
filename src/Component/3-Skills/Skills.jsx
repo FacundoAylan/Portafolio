@@ -28,6 +28,22 @@ const animation = keyframes`
     transform:translateY(0)
   }
 `;
+const animation2 = keyframes`
+  from {
+    transform:translateX(100%)
+  }
+  to {
+    transform:translateX(0)
+  }
+`;
+const animation3 = keyframes`
+  from {
+    transform:translateX(-100%)
+  }
+  to {
+    transform:translateX(0)
+  }
+`;
 
 const Skills = () => {
   const front = [
@@ -90,6 +106,7 @@ const Skills = () => {
           height="auto"
           justifyContent="center"
           borderBottom="4px double #0dfcf9"
+          animation={`${animation2} 2s ease`}
         >
           {front.map((icons, index) => {
             return (
@@ -119,6 +136,7 @@ const Skills = () => {
           justifyContent="center"
           borderBottom="4px double #0dfcf9"
           padding="1%"
+          animation={`${animation3} 2s ease`}
         >
           {back.map((icons, index) => {
             return (
@@ -141,6 +159,7 @@ const Skills = () => {
           width="100%"
           height="auto"
           justifyContent="center"
+          animation={`${animation} 2s ease`}
         >
           {extra.map((icons, index) => {
             return (

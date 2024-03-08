@@ -4,14 +4,6 @@ import Cardprojects from './card';
 
 const animation = keyframes`
   from{
-    transform:translateY(100%)
-  }
-  to{
-    transform:translateY(0)
-  }
-`
-const animation2 = keyframes`
-  from{
     transform:translateY(-200%)
   }
   to{
@@ -20,6 +12,7 @@ const animation2 = keyframes`
 `
 
 const Projects = () => {
+
   return (
     <Box width="100%" minHeight="100vh" paddingTop={{base:'1%',sm:'5%',lg:"5%" }}paddingBottom="2%">
       <Text
@@ -28,7 +21,7 @@ const Projects = () => {
         color="white"
         fontWeight="bold"
         textAlign="center"
-        animation={`${animation2} 1.5s ease`}
+        animation={`${animation} 1.5s ease`}
       >
         Proyectos
       </Text>
@@ -41,22 +34,26 @@ const Projects = () => {
         alignItems='center'
         gap={{ base: 3, lg: 8 }}
         marginTop="2%"
-        animation={`${animation} 1s ease`}
-      >
-        {slides.map((slide, index) => {
-          return (
-            <Cardprojects
-              image={slide.image}
-              title={slide.title}
-              content={slide.content}
-              subtitle={slide.subtitle}
-              right={slide.rightSubtitle}
-              video={slide.video}
-              github={slide.github}
-              id={index}
-            />
-          );
-        })}
+        >
+      {slides.map((slide, index) => {
+
+        const animations = index % 2 === 0 ? true: false;
+        return (
+          <Cardprojects
+            key={index}
+            image={slide.image}
+            title={slide.title}
+            content={slide.content}
+            subtitle={slide.subtitle}
+            right={slide.rightSubtitle}
+            video={slide.video}
+            github={slide.github}
+            id={index}
+            animations={animations}
+          />
+        );
+      })}
+
       </Flex>
     </Box>
   );
