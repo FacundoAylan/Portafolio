@@ -43,8 +43,7 @@ const HomePage = () => {
         borderRadius={{base:'0',sm:'18px',lg:'18px'}}
         width={{ base: '100%',sm:'80%', lg: '60%' }}
         height={{ base: '100%', sm: '75%', lg: '55vh' }}
-        bgImage="linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f)"
-        animation={`${animation} 1s ease-in-out,${animation2} 4s ease-in-out infinite`}
+        animation={{base:'',sm:`${animation} 1s ease-in-out,${animation2} 4s ease-in-out infinite`}}
         border={{base:'none',sm:'2px solid #9389a3',lg:'2px solid #9389a3'}}
       >
       <Flex
@@ -52,7 +51,7 @@ const HomePage = () => {
         overflow="hidden"
         width='100%'
         height='100%'
-        backgroundColor="#08244c"
+        backgroundColor={{base:'trasnparent',sm:"#08244c",lg:"#08244c"}}
         borderRadius={{base:'0',sm:'5% 20%',lg:"5% 40%"}}
         color="white"
         position="relative"
