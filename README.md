@@ -1,8 +1,8 @@
-# Bienvenido a nuestro repo del portafolio.
-Hola! Somos Nahuel y Facuando, y estamos encantado de tenerte por acá. Bienvenido a nuestro portafolio, donde mostramos nuestra pasión por la tecnología y nuestro viaje como desarrolladores full stack.
+# Bienvenido a mi portafolio.
+Hola! Soy Facundo, y estoy encantado de tenerte aqui. Bienvenido a mi portafolio, donde te muestro mi pasión por la tecnología y mi viaje como desarrollador full stack.
 
 ## Nuestra página
-Ahora tenemos una nuestra [página deployada](portfolio-nahuellescano.vercel.app "ir a portafolio"). Sin embargo, también podes clonar este repo. Después, tendrás que instalar todas las dependencias usando npm:
+Ahora tengo mi [página deployada](portfolio-nahuellescano.vercel.app "ir a portafolio"). Sin embargo, también podes clonar este repo. Después, tendrás que instalar todas las dependencias usando npm:
 
 ```bash
 npm install
@@ -15,11 +15,7 @@ npm start
 ```
 
 ## Contactenos
-Estamos a su disposición para que nos contacten a través de nuestrar redes o vía mail.
-
-[Perfil de Github de Nahuel](https://github.com/NahuelLescano "Perfil de github")
-
-[Perfil de LinkedIn de Nahuel](https://www.linkedin.com/in/nahuel-lescano-906a2618b/ "Perfil de LinkedIn")
+Estamos a su disposición para que me contactes a través de mis redes o vía mail.
 
 [Perfil de LinkedIn de Facundo](https://www.linkedin.com/in/facundo-aylan-582b52257/ "Perfil de LinkedIn")
 
