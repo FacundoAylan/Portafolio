@@ -13,7 +13,8 @@ import git from './skills_image/git.svg';
 import github from './skills_image/github.svg';
 import linux from './skills_image/linux.svg';
 import windows from './skills_image/windows.svg';
-import { Box, Flex, Text, keyframes, ScaleFade } from '@chakra-ui/react';
+import skillBackground from'./skills_image/skills.png';
+import { Box, Flex, Text, keyframes, ScaleFade, Image } from '@chakra-ui/react';
 import CardSkills from './boxSkills';
 
 const traslate = keyframes`
@@ -75,98 +76,145 @@ const Skills = () => {
         animation={`${animation} 1s ease`}
         position="absolute"
         width={{ base: '96%', sm: '98%', lg: '70%' }}
-        height={{ base: '80%', sm: '86%', lg: '80%' }}
+        height={{ base: '80%', sm: '86%', lg: '88%' }}
         left={{ base: '2%', sm: '1%', lg: '15%' }}
         top={{ base: '0', sm: '7%', lg: '10%' }}
-        backgroundColor={{ base: 'trasparent', lg: 'transparent' }}
         boxShadow="inset 0 0 10px 1px #0dfcf9"
         overflow="hidden"
         borderRadius={{ base: '12px', sm: '18px', lg: '18px' }}
         border="2px solid #0dfcf9"
         flexDirection="column"
-        gap={3}
+        gap={{base:0,lg:3}}
         justifyContent="center"
         alignItems="center"
         padding="1%"
+        backgroundColor='transparent'
       >
-        <Text
-          textTransform="uppercase"
-          color="#ea63fe"
-          fontWeight="bold"
-          fontSize={{base:'1rem',sm:'0.8rem',lg:"1rem"}}
-          textAlign="center"
-          animation={`${traslate} 1s ease infinite`}
-        >
-          Front-End
-        </Text>
-        <Flex
-          flexWrap="wrap"
-          flexDirection="row"
-          width="100%"
-          height="auto"
-          justifyContent="center"
-          borderBottom="4px double #0dfcf9"
-          animation={`${animation2} 2s ease`}
-        >
-          {front.map((icons, index) => {
-            return (
-              <CardSkills
-                key={index}
-                id={index}
-                name={icons.name}
-                icons={icons.icon}
-              />
-            );
-          })}
-        </Flex>
-        <Text
-          textTransform="uppercase"
-          color="#ea63fe"
-          fontWeight="bold"
-          fontSize={{base:'1rem',sm:'0.8rem',lg:"1rem"}}
-          textAlign="center"
-          animation={`${traslate} 1s ease infinite`}
-        >
-          Back-End
-        </Text>
-        <Flex
-          flexDirection="row"
-          width="100%"
-          height="auto"
-          justifyContent="center"
-          borderBottom="4px double #0dfcf9"
-          padding="1%"
-          animation={`${animation3} 2s ease`}
-        >
-          {back.map((icons, index) => {
-            return (
-              <CardSkills key={index} name={icons.name} icons={icons.icon} />
-            );
-          })}
-        </Flex>
-        <Text
-          textTransform="uppercase"
-          color="#ea63fe"
-          fontWeight="bold"
-          fontSize={{base:'1rem',sm:'0.8rem',lg:"1rem"}}
-          textAlign="center"
-          animation={`${traslate} 1s ease infinite`}
-        >
-          Herramientas
-        </Text>
-        <Flex
-          flexDirection="row"
-          width="100%"
-          height="auto"
-          justifyContent="center"
+        <Image 
+          src={skillBackground} 
+          display={{base:'none',sm:'none',lg:'block'}}
+          position='absolute'
+          left='20%'
+          bottom='-15%'
           animation={`${animation} 2s ease`}
+        />
+        <Box 
+          width={{base:'100%',sm:'100%',lg:'35%'}}
+          height='auto'
+          position={{base:'none',lg:'absolute'}}
+          top='4%'
+          left='2%'
+          borderRadius={{base:'0',lg:'8px'}}
+          border={{lg:"4px solid #ab6d38"}}
+          borderBottom={{base:'4px double #0dfcf9'}}
+          overflow='hidden'
+          padding={{lg:'4%'}}
+          zIndex={100}
+          backgroundColor={{lg:'#0c203b'}}
         >
-          {extra.map((icons, index) => {
-            return (
-              <CardSkills key={index} name={icons.name} icons={icons.icon} />
-            );
-          })}
-        </Flex>
+          <Text
+            textTransform="uppercase"
+            color="#ea63fe"
+            fontWeight="bold"
+            fontSize={{base:'1rem',sm:'0.8rem',lg:"1rem"}}
+            textAlign="center"
+            animation={`${traslate} 1s ease infinite`}
+          >
+            Front-End
+          </Text>
+          <Flex
+            flexWrap="wrap"
+            flexDirection="row"
+            width="100%"
+            height="auto"
+            justifyContent="center"
+            animation={`${animation2} 2s ease`}
+          >
+            {front.map((icons, index) => {
+              return (
+                <CardSkills
+                  key={index}
+                  id={index}
+                  name={icons.name}
+                  icons={icons.icon}
+                />
+              );
+            })}
+          </Flex>
+        </Box>
+        <Box 
+          width={{base:'100%',sm:'100%',lg:'40%'}}
+          position={{base:'none',lg:'absolute'}}
+          top='2%'
+          right='2%'
+          borderRadius={{base:'0',lg:'8px'}}
+          border={{lg:"4px solid #ab6d38"}}
+          borderBottom={{base:'4px double #0dfcf9'}}
+          overflow='hidden'
+          padding={{lg:'4%'}}
+          backgroundColor={{lg:'#0c203b'}}
+        >
+          <Text
+            textTransform="uppercase"
+            color="#ea63fe"
+            fontWeight="bold"
+            fontSize={{base:'1rem',sm:'0.8rem',lg:"1rem"}}
+            textAlign="center"
+            animation={`${traslate} 1s ease infinite`}
+          >
+            Back-End
+          </Text>
+          <Flex
+            flexDirection="row"
+            width="100%"
+            height="auto"
+            justifyContent="center"
+            padding="1%"
+            animation={`${animation3} 2s ease`}
+            gap={2}
+          >
+            {back.map((icons, index) => {
+              return (
+                <CardSkills key={index} name={icons.name} icons={icons.icon} />
+              );
+            })}
+          </Flex>
+        </Box>
+        <Box 
+          width={{base:'100%',sm:'100%',lg:'40%'}}
+          position={{base:'none',lg:'absolute'}}
+          top='40%'
+          right='2%'
+          borderRadius={{base:'0',lg:'8px'}}
+          border={{lg:"4px solid #ab6d38"}}
+          overflow='hidden'
+          padding={{lg:'4%'}}
+          backgroundColor={{lg:'#0c203b'}}
+        >
+          <Text
+            textTransform="uppercase"
+            color="#ea63fe"
+            fontWeight="bold"
+            fontSize={{base:'1rem',sm:'0.8rem',lg:"1rem"}}
+            textAlign="center"
+            animation={`${traslate} 1s ease infinite`}
+          >
+            Herramientas
+          </Text>
+          <Flex
+            flexDirection="row"
+            width="100%"
+            height="auto"
+            justifyContent="center"
+            animation={`${animation} 2s ease`}
+          >
+            {extra.map((icons, index) => {
+              return (
+                <CardSkills key={index} name={icons.name} icons={icons.icon} />
+              );
+            })}
+          </Flex>
+        </Box>
       </Flex>
     </Box>
   );

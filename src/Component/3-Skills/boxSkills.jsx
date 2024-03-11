@@ -5,7 +5,7 @@ const CardSkills = ({name, icons}) => {
   
   return (
     <Flex 
-      width={{base:'20%',sm:'14%',lg:'18%' }}
+      width={{base:'20%',sm:'14%',lg:'25%' }}
       height='13vh' 
       overflow='hidden'
       borderRadius='8px'
@@ -29,7 +29,7 @@ const CardSkills = ({name, icons}) => {
         textTransform='uppercase'
         color='#0dfcf9'
         fontWeight='bold'
-        fontSize={{base:'0.6rem',lg:'0.8rem'}}
+        fontSize={{base:'0.6rem',lg:'0.6rem'}}
         textAlign='center'
       >
         {name}
