@@ -13,7 +13,8 @@ import git from './skills_image/git.svg';
 import github from './skills_image/github.svg';
 import linux from './skills_image/linux.svg';
 import windows from './skills_image/windows.svg';
-import skillBackground from'./skills_image/skills.png';
+import computer from'./skills_image/skills.png';
+import skillBackground from'./skills_image/backgroundSkills.png';
 import { Box, Flex, Text, keyframes, ScaleFade, Image } from '@chakra-ui/react';
 import CardSkills from './boxSkills';
 
@@ -75,9 +76,9 @@ const Skills = () => {
       <Flex
         animation={`${animation} 1s ease`}
         position="absolute"
-        width={{ base: '96%', sm: '98%', lg: '70%' }}
+        width={{ base: '96%', sm: '98%', lg: '90%' }}
         height={{ base: '80%', sm: '86%', lg: '88%' }}
-        left={{ base: '2%', sm: '1%', lg: '15%' }}
+        left={{ base: '2%', sm: '1%', lg: '5%' }}
         top={{ base: '0', sm: '7%', lg: '10%' }}
         boxShadow="inset 0 0 10px 1px #0dfcf9"
         overflow="hidden"
@@ -89,17 +90,21 @@ const Skills = () => {
         alignItems="center"
         padding="1%"
         backgroundColor='transparent'
+        backgroundImage={{lg:skillBackground}}
+        backgroundSize='100% 100%'
+        backgroundRepeat='no-repeat'
+        backgroundPosition='center'
       >
         <Image 
-          src={skillBackground} 
+          src={computer} 
           display={{base:'none',sm:'none',lg:'block'}}
           position='absolute'
-          left='20%'
+          left='25%'
           bottom='-15%'
-          animation={`${animation} 2s ease`}
+          animation={`${animation} 1.5s ease`}
         />
         <Box 
-          width={{base:'100%',sm:'100%',lg:'35%'}}
+          width={{base:'100%',sm:'100%',lg:'30%'}}
           height='auto'
           position={{base:'none',lg:'absolute'}}
           top='4%'
@@ -143,7 +148,7 @@ const Skills = () => {
           </Flex>
         </Box>
         <Box 
-          width={{base:'100%',sm:'100%',lg:'40%'}}
+          width={{base:'100%',sm:'100%',lg:'35%'}}
           position={{base:'none',lg:'absolute'}}
           top='2%'
           right='2%'
@@ -171,7 +176,7 @@ const Skills = () => {
             justifyContent="center"
             padding="1%"
             animation={`${animation3} 2s ease`}
-            gap={2}
+            gap={1.3}
           >
             {back.map((icons, index) => {
               return (
@@ -181,9 +186,9 @@ const Skills = () => {
           </Flex>
         </Box>
         <Box 
-          width={{base:'100%',sm:'100%',lg:'40%'}}
+          width={{base:'100%',sm:'100%',lg:'35%'}}
           position={{base:'none',lg:'absolute'}}
-          top='40%'
+          top='45%'
           right='2%'
           borderRadius={{base:'0',lg:'8px'}}
           border={{lg:"4px solid #ab6d38"}}

@@ -45,7 +45,6 @@ const Cardprojects = ({ image, title, content, subtitle, right, video, github, i
   const closeModal = () => {
     setIsModalOpen(false);
   };
-  console.log(animations)
   return (
     <Box width='100%' display='flex' justifyContent='center'>
       <Flex
