@@ -4,12 +4,8 @@ import { FaLinkedin, FaGithub, FaCloudDownloadAlt } from 'react-icons/fa';
 import { Box, Flex, Icon, Image, Link, Text, keyframes } from '@chakra-ui/react';
 
 const animation = keyframes`
-  from {
-    transform: scale(0);
-    rotate:-180deg
-  }
-  to {
-    transform: scale(1);
+  0%{
+    transform: translate(-100%, 0);
   }
 `;
 const animation2 = keyframes`
@@ -26,9 +22,29 @@ const animation2 = keyframes`
     background-image: linear-gradient(to right, #fed90f, #09f1b8, #00a2ff, #ff00d2);
   }
 `;
+const text = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
 
+const animation3=keyframes`
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+`
 
 const HomePage = () => {
+
   return (
     <Box
       width="100%"
@@ -36,23 +52,22 @@ const HomePage = () => {
       position="relative"
       display="flex"
       justifyContent="center"
-      alignItems="center"
+      alignItems='center'
     >
       <Box
         padding={{base:'0',sm:'0.5%',lg:'0.3%'}}
         borderRadius={{base:'0',sm:'18px',lg:'18px'}}
         width={{ base: '100%',sm:'80%', lg: '60%' }}
         height={{ base: '100%', sm: '75%', lg: '55vh' }}
-        animation={{base:'',sm:`${animation} 1s ease-in-out,${animation2} 4s ease-in-out infinite`}}
-        border={{base:'none',sm:'2px solid #9389a3',lg:'2px solid #9389a3'}}
+        animation={{base:'',sm:`${animation} 1.5s ease-in-out,${animation2} 4s ease-in-out infinite`}}
       >
       <Flex
         padding="2%"
         overflow="hidden"
-        width='100%'
-        height='100%'
+        width={{base:'100%',lg:'98%'}}
+        height={{base:'100%',lg:'96%'}}
         backgroundColor={{base:'trasnparent',sm:"#08244c",lg:"#08244c"}}
-        borderRadius={{base:'0',sm:'5% 20%',lg:"5% 40%"}}
+        borderRadius={{base:'0',sm:'18px',lg:"18px"}}
         color="white"
         position="relative"
         flexDirection="column"
@@ -60,6 +75,7 @@ const HomePage = () => {
         alignItems={"center"}
         paddingTop={{base:'15%',sm:'0', lg:'0'}}
         gap={1}
+        margin={{lg:'1%'}}
       >
         <Image 
           src={profile} 
@@ -91,6 +107,7 @@ const HomePage = () => {
           backgroundSize="100% 100%"
           backgroundRepeat="no-repeat"
           backgroundPosition="center bottom"
+          animation={`${text} 2s ease-in-out infinite`}
         >
           Facundo Aylan
         </Text>
