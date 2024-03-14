@@ -14,7 +14,12 @@ const animation = keyframes`
 const Projects = () => {
 
   return (
-    <Box width="100%" minHeight="100vh" paddingTop={{base:'1%',sm:'5%',lg:"5%" }}paddingBottom="2%">
+    <Box 
+      width="100%" 
+      minHeight="100vh" 
+      paddingTop={{base:'1%',sm:'5%',lg:"5%" }}
+      paddingBottom="2%"
+    >
       <Text
         fontSize="2rem"
         textTransform="uppercase"
@@ -28,7 +33,7 @@ const Projects = () => {
       <Flex
         width="100%"
         height="auto"
-        flexDirection="column"
+        flexDirection={{base:"column", lg:'row'}}
         flexWrap="wrap"
         justifyContent="center"
         alignItems='center'
