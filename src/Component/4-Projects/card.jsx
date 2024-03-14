@@ -36,16 +36,18 @@ const animation3 = keyframes`
 const Cardprojects = ({ image, title, content, subtitle, right, video, github, id, animations }) => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
-  const openModal = () => {
+  const openModal = (e) => {
+    e.stopPropagation(); 
     setIsModalOpen(true);
   };
 
-  const closeModal = () => {
+  const closeModal = (e) => {
+    e.stopPropagation(); 
     setIsModalOpen(false);
   };
 
-  const [isHovered, setIsHovered] = useState(false);
   return (
     <Box 
       width={{base:'100%', lg:'20%'} }
@@ -67,6 +69,7 @@ const Cardprojects = ({ image, title, content, subtitle, right, video, github, i
         borderRadius='8px'
         boxShadow={{lg:"0 0 10px 5px rgba(255, 255, 255, 0.5)"}}
         border='1px solid white'
+        zIndex={1}
       >
         <IconButton
           icon={<FaPlay />}
@@ -100,7 +103,7 @@ const Cardprojects = ({ image, title, content, subtitle, right, video, github, i
           bg={{lg:"#081b3b"}}
           transition="transform 1s ease"
           transform={{
-            lg: "translateY(88%)",
+            lg: "translateY(81%)",
           }}
           zIndex={{lg:100}}
           _hover={{
@@ -186,16 +189,20 @@ const Cardprojects = ({ image, title, content, subtitle, right, video, github, i
             <Text fontSize={{base:'0.6rem',lg:'0.7rem'}}>git-hub</Text>
           </Link>
         </Flex>
-        <Modal isOpen={isModalOpen} onClose={closeModal} size="4xl">
-          <ModalContent
-            width="100%"
-            height="80%"
-            overflow="hidden"
-            position="relative"
-            padding={0}
+      </Flex>
+        {
+          isModalOpen &&
+          <Box 
+            position='absolute' 
+            zIndex={20} 
+            backgroundColor='#071f45'
+            width='50%'
+            height='20%'
+            left='25%'
+            borderRadius='12px'
+            border='2px solid white'
           >
-            <ModalBody padding={0} margin={0} backgroundColor='#071f45'>
-              <Button
+            <Button
                 onClick={closeModal}
                 right={2}
                 position="absolute"
@@ -207,17 +214,15 @@ const Cardprojects = ({ image, title, content, subtitle, right, video, github, i
               >
                 X
               </Button>
-                <iframe
-                  src={video}
-                  frameborder="0" 
-                  allow="autoplay; 
-                  fullscreen" allowfullscreen
-                  style={{ width: '100%', height: '100%',margin:0 }}
-                />
-            </ModalBody>
-          </ModalContent>
-        </Modal>
-      </Flex>
+            <iframe
+              src={video}
+              frameborder="0" 
+              allow="autoplay; 
+              fullscreen" allowfullscreen
+              style={{ width: '100%', height: '100%',margin:0 }}
+            />
+          </Box>
+        }
     </Box>
   );
 };

@@ -1,5 +1,5 @@
 import documentoPDF from './cv.pdf';
-import profile from '../../assets/image/profile.jpg'
+import profile from '@/assets/image/profile.jpg'
 import { FaLinkedin, FaGithub, FaCloudDownloadAlt } from 'react-icons/fa';
 import { Box, Flex, Icon, Image, Link, Text, keyframes } from '@chakra-ui/react';
 
