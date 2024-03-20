@@ -1,11 +1,10 @@
-import documentoPDF from './cv.pdf';
 import profile from '@/assets/image/profile.jpg'
-import { FaLinkedin, FaGithub, FaCloudDownloadAlt } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { Box, Flex, Icon, Image, Link, Text, keyframes } from '@chakra-ui/react';
 
 const animation = keyframes`
   0%{
-    transform: translate(-100%, 0);
+    transform: translate(0, 100%);
   }
 `;
 const animation2 = keyframes`
@@ -44,6 +43,11 @@ const animation3=keyframes`
 `
 
 const HomePage = () => {
+  const email = 'facundoaylan3@gmail.com';
+  const subject = '';
+  const body = '';
+
+  const mailtoLink = `https://mail.google.com/mail/?view=cm&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
   return (
     <Box
@@ -55,23 +59,22 @@ const HomePage = () => {
       alignItems='center'
     >
       <Box
-        padding={{base:'0',sm:'0.5%',lg:'0.3%'}}
+        padding={{base:'0',sm:'0.5%',lg:'0'}}
         borderRadius={{base:'0',sm:'18px',lg:'18px'}}
-        width={{ base: '100%',sm:'80%', lg: '60%' }}
-        height={{ base: '100%', sm: '75%', lg: '55vh' }}
-        animation={{base:'',sm:`${animation} 1.5s ease-in-out,${animation2} 4s ease-in-out infinite`}}
+        width={{ base: '100%',sm:'80%', lg: '30%' }}
+        height={{ base: '100%', sm: '75%', lg: '80vh' }}
+        animation={{base:'',sm:`${animation} 1s ease-in-out,${animation2} 4s ease-in-out infinite`}}
       >
       <Flex
-        padding="2%"
         overflow="hidden"
         width={{base:'100%',lg:'98%'}}
-        height={{base:'100%',lg:'96%'}}
-        backgroundColor={{base:'trasnparent',sm:"#08244c",lg:"#08244c"}}
+        height={{base:'100%',lg:'98%'}}
+        backgroundColor={{base:'trasnparent',sm:"#08244c",lg:"#0c203b"}}
         borderRadius={{base:'0',sm:'18px',lg:"18px"}}
         color="white"
         position="relative"
         flexDirection="column"
-        justifyContent={{base:"start",sm:'center',lg:'center'}}
+        justifyContent='center'
         alignItems={"center"}
         paddingTop={{base:'15%',sm:'0', lg:'0'}}
         gap={1}
@@ -79,25 +82,18 @@ const HomePage = () => {
       >
         <Image 
           src={profile} 
-          display={{base:'block',sm:'none',lg:'none'}}
+          display={{base:'block',sm:'none',lg:'block'}}
           borderRadius='100%'
-          height='25%'
+          height={{base:'25%',lg:'40%'}}
           border='3px double #ea63fe'
         />
-        <Text
-          fontWeight="bold"
-          fontSize={{ base: '1.8rem', lg: '2rem' }}
-          textAlign="center"
-        >
-          Hola, Mi nombre es
-        </Text>
         <Text
           width="100%"
           textAlign="center"
           as="span"
           display="inline-block"
           fontWeight="900"
-          fontSize={{ base: '2rem', lg: '3em' }}
+          fontSize={{ base: '2rem', lg: '2.5em' }}
           lineHeight="1.2"
           letterSpacing="2px"
           padding="1px"
@@ -112,70 +108,66 @@ const HomePage = () => {
           Facundo Aylan
         </Text>
         <Text fontWeight="bold" fontSize="1rem" textAlign="center">
-          Full-Stack Developer
+          Desarrollador Full-Stack
         </Text>
-        <Text fontWeight="bold" fontSize="1rem" textAlign="center">
-          Experiencia en Diseño y Desarrollo de Páginas Web y Aplicaciones
-          Móviles
-        </Text>
+        <Text fontWeight='bold'>Experto en Front-End</Text>
+        <Text width='100%' fontWeight='bold'paddingLeft='6%'>Contactos:</Text>
         <Flex
           width={{ base: '60%', sm: '100%', lg: '100%' }}
           flexDirection='row'
           justifyContent="center"
           gap={{ base: 4,sm: 2, lg: 10 }}
-          marginTop={6}
+          marginTop={1}
           fontWeight="bold"
         >
           <Link
-            href={documentoPDF}
-            download="CV-Facundo.pdf"
-            borderRadius="10px"
-            border={{base:'none',sm:"0.8px solid #0dfef8",lg:"0.8px solid #0dfef8"}}
+            href={mailtoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            borderRadius="100%"
+            border={{base:'none',sm:"0.8px solid #0dfef8",lg:"2px solid #0dfef8"}}
             display="flex"
+            flexDirection={{base:'column', sm:'row',lg:'row'}}
             alignItems="center"
             justifyContent="center"
-            flexDirection={{base:'column', sm:'row',lg:'row'}}
-            padding="10px 20px"
             gap={2}
+            padding="5px 10px"
             _hover={{transform:'scale(1.1)'}}
           >
-            <Icon as={FaCloudDownloadAlt} boxSize={7} color="#ea4aff" />
-            <Text>CV</Text>
+            <Icon as={FaEnvelope} boxSize={7} color="#eb64fe" />
           </Link>
           <Link
             href={'https://www.linkedin.com/in/facundo-aylan-582b52257/'}
             target="_blank"
             rel="noopener noreferrer"
-            borderRadius="12px"
-            border={{base:'none',sm:"0.8px solid #0dfef8",lg:"0.8px solid #0dfef8"}}
+            borderRadius="100%"
+            border={{base:'none',sm:"0.8px solid #0dfef8",lg:"2px solid #0dfef8"}}
             display="flex"
             flexDirection={{base:'column', sm:'row',lg:'row'}}
             alignItems="center"
             justifyContent="center"
             gap={2}
-            padding="10px 20px"
+            padding="10px 10px"
             _hover={{transform:'scale(1.1)'}}
           >
             <Icon as={FaLinkedin} boxSize={7} color="#3b62f1" />
-            <Text>LinkedIn</Text>
           </Link>
 
           <Link
             href={'https://github.com/FacundoAylan'}
             target="_blank"
             rel="noopener noreferrer"
-            borderRadius="12px"
-            border={{base:'none',sm:"0.8px solid #0dfef8",lg:"0.8px solid #0dfef8"}}
+            borderRadius="100%"
+            border={{base:'none',sm:"0.8px solid #0dfef8",lg:"2px solid #0dfef8"}}
             display="flex"
             flexDirection={{base:'column', sm:'row',lg:'row'}}
             alignItems="center"
             justifyContent="center"
             gap={2}
-            padding="10px 20px"
+            padding="5px 10px"
             _hover={{transform:'scale(1.1)'}}
           >
             <Icon as={FaGithub} boxSize={7} color="#eb64fe" />
-            <Text>Github</Text>
           </Link>
         </Flex>
       </Flex>

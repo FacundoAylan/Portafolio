@@ -1,5 +1,6 @@
-import { Box, Flex, Button, Icon, Text } from '@chakra-ui/react';
+import { Flex, Button, Icon, Text } from '@chakra-ui/react';
 import { FaHome, FaBriefcase, FaCode } from 'react-icons/fa';
+import { MdPerson } from 'react-icons/md';
 
 
 const NavBar = ({handleButtonClick}) => {
@@ -23,6 +24,17 @@ const NavBar = ({handleButtonClick}) => {
         >
           <Icon as={FaHome} boxSize={8} color='#e32451' display={{base:'block', sm:'none', lg:'none'}}/>
           <Text display={{base:'none', sm:'block', lg:'block'}}>Inicio</Text>
+        </Button>
+        <Button 
+          backgroundColor='transparent' 
+          color='#ea63fe'
+          fontWeight='800'
+          textTransform='uppercase'
+          _hover={{color:'#0dfcf7'}}
+          onClick={() => handleButtonClick('about')}
+        >
+          <Icon as={MdPerson} boxSize={8} color='#e32451' display={{base:'block', sm:'none', lg:'none'}}/>
+          <Text display={{base:'none', sm:'block', lg:'block'}}>Sobre mi</Text>
         </Button>
         <Button
           backgroundColor='transparent' 

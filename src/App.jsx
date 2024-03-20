@@ -1,7 +1,8 @@
 import NavBar from '@/Component/1-NavBar/NavBar';
 import HomePage from '@/Component/2-HomePage/HomePage';
-import Project from '@/Component/4-Projects/Projects';
-import Skills from '@/Component/3-Skills/Skills';
+import About from './Component/03-About/About';
+import Skills from '@/Component/4-Skills/Skills';
+import Project from '@/Component/5-Projects/Projects';
 import { Box, Flex} from '@chakra-ui/react';
 import principal from '@/assets/principal.jpg';
 import { useState } from 'react';
@@ -47,6 +48,9 @@ const App = () => {
       </Box>
       <Box width="100%" height="100vh" id="home" overflow="hidden">
         <HomePage isActive={activeSection === 'home'} />
+      </Box>
+      <Box width="100%" height="100vh" id="about" overflow="hidden">
+        <About isActive={activeSection === 'about'} />
       </Box>
       <Box width="100%" height="100vh" id="skills" overflow="hidden">
         <Skills isActive={activeSection === 'skills'} />

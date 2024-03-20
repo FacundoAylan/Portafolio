@@ -5,15 +5,15 @@ import imagen4 from './image/image_4.png';
 import imagen5 from './image/image_5.png';
 import imagen6 from './image/image_6.png';
 import imagen7 from './image/image_7.png';
-import css from '../3-Skills/skills_image/css.svg';
-import react from '../3-Skills/skills_image/react.svg';
-import redux from '../3-Skills/skills_image/redux.svg';
-import chakraui from '../3-Skills/skills_image/chakraui.svg';
-import node from '../3-Skills/skills_image/node.svg';
-import express from '../3-Skills/skills_image/express.svg';
-import postgres from '../3-Skills/skills_image/postgres.svg';
-import python from '../3-Skills/skills_image/python.svg'
-import firebase from '../3-Skills/skills_image/firebase.svg';
+import css from '../4-Skills/skills_image/css.svg';
+import react from '../4-Skills/skills_image/react.svg';
+import redux from '../4-Skills/skills_image/redux.svg';
+import chakraui from '../4-Skills/skills_image/chakraui.svg';
+import node from '../4-Skills/skills_image/node.svg';
+import express from '../4-Skills/skills_image/express.svg';
+import postgres from '../4-Skills/skills_image/postgres.svg';
+import python from '../4-Skills/skills_image/python.svg'
+import firebase from '../4-Skills/skills_image/firebase.svg';
 
 export const slides = [
   {
