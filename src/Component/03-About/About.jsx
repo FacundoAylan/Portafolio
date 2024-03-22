@@ -12,7 +12,7 @@ import documentoPDF from './cv.pdf';
 import {
   FaDesktop,
   FaMicrochip,
-  FaLinux,
+  FaGamepad,
   FaMusic,
   FaVideo,
   FaKeyboard,
@@ -147,11 +147,9 @@ const About = () => {
             </Text>
           </Box>
           <Box
-            width={{ base: '100%', lg: '90%' }}
+            width={{ base: '100%', lg: '62%' }}
             color="white"
-            border="4px solid #810194"
             borderRadius="12px"
-            backgroundColor="#0c203b"
             animation={{
               lg: `${animation3} 1s ease`,
             }}
@@ -160,12 +158,6 @@ const About = () => {
               fontSize={{ base: '20px', lg: '36px' }}
               fontWeight="bold"
               textAlign="center"
-              color="transparent"
-              bgImage="linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f)"
-              backgroundClip="text"
-              backgroundSize="100% 100%"
-              backgroundRepeat="no-repeat"
-              backgroundPosition="center bottom"
             >
               Intereses
             </Text>
@@ -176,51 +168,48 @@ const About = () => {
               fontWeight="bold"
               textAlign="center"
               marginBottom="2%"
-              color='black'
             >
               <Box
-                border="2px solid #b601d1"
-                borderRadius="8px"
-                padding="1%"
-                marginLeft="2%"
-                backgroundColor='#ea63fe'
+                borderRight="6px solid #f7434e"
+                borderTop="6px solid #07e2c5"
+                borderLeft='6px solid #07e2c5'
+                borderBottom='6px solid #07e2c5'
+                boxShadow="inset 0 0 65px 5px #08e4c4"
               >
-                <Icon width="100px" height="100px" as={FaDesktop} />
+                <Icon width="100px" height="100px" as={FaDesktop} color='#f5f5dc'/>
                 <Text>Computadoras</Text>
               </Box>
               <Box
-                border="2px solid #b601d1"
-                borderRadius="8px"
+                borderRight="6px solid #f7434e"
+                borderBottom="6px solid #f7434e"
+                borderTop='6px solid #f7434e'
+                boxShadow="inset 0 0 65px 5px #f7434e"
                 padding="1%"
-                marginLeft="2%"
-                backgroundColor='#ea63fe'
-                color='black'
               >
                 <Icon
                   width="100px"
                   height="100px"
                   as={FaMicrochip}
+                  color='#f5f5dc'
                 />
                 <Text>Electronica</Text>
               </Box>
               <Box
-                border="2px solid #b601d1"
-                borderRadius="8px"
+                borderRight="6px solid #ea63fe"
+                borderTop="6px solid #ea63fe"
+                borderBottom='6px solid #ea63fe'
+                boxShadow="inset 0 0 65px 5px #ea63fe"
                 padding="1%"
-                marginLeft="2%"
-                backgroundColor='#ea63fe'
-                color='black'
               >
-                <Icon width="100px" height="100px" as={FaLinux}/>
-                <Text>Linux</Text>
+                <Icon width="100px" height="100px" as={FaGamepad} color=''/>
+                <Text>Videojuegos</Text>
               </Box>
               <Box
-                border="2px solid #b601d1"
-                borderRadius="8px"
+                borderRight="6px solid #f7434e"
+                borderBottom="6px solid #ea63fe"
+                borderTop='6px solid #ea63fe'
+                boxShadow="inset 0 0 65px 5px #ea63fe"
                 padding="1%"
-                marginLeft="2%"
-                backgroundColor='#ea63fe'
-                color='black'
               >
                 <Icon
                   width="100px"
@@ -230,29 +219,28 @@ const About = () => {
                 <Text>Musica</Text>
               </Box>
               <Box
-                border="2px solid #b601d1"
-                borderRadius="8px"
+                borderRight="6px solid #f7434e"
+                borderTop="6px solid #f7434e"
+                borderBottom='6px solid #f7434e'
+                boxShadow="inset 0 0 65px 5px #f7434e"
                 padding="1%"
-                marginLeft="2%"
-                backgroundColor='#ea63fe'
-                color='black'
               >
                 <Icon
                   width="100px"
                   height="100px"
                   as={FaVideo}
+                  color='white'
                 />
                 <Text>Peliculas</Text>
               </Box>
               <Box
-                border="2px solid #b601d1"
-                borderRadius="8px"
+                borderBottom="6px solid #07e2c5"
+                borderTop='6px solid #07e2c5'
+                borderRight='6px solid #07e2c5'
+                boxShadow="inset 0 0 65px 5px #08e4c4"
                 padding="1%"
-                marginLeft="2%"
-                backgroundColor='#ea63fe' 
-                color='black'
               >
-                <Icon width="100px" height="100px" as={FaKeyboard} />
+                <Icon width="100px" height="100px" as={FaKeyboard} color='#f5f5dc'/>
                 <Text>Programar</Text>
               </Box>
             </Flex>
