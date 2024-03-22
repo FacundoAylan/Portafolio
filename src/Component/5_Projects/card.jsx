@@ -148,7 +148,14 @@ const Cardprojects = ({ image, title, content, subtitle, right, video, github, i
             {title}
           </Center>
           <Center padding='1%' fontSize={{base:'0.6rem',lg:'0.9rem'}}>{subtitle}</Center>
-          <Text fontSize={{base:'0.4rem',lg:'0.8rem'}} fontWeight={600} paddingLeft='2%'>{content}</Text>
+          <Text 
+            fontSize={{base:'0.4rem',lg:'0.8rem'}} 
+            fontWeight={600} 
+            paddingLeft='3%' 
+            paddingRight='3%'
+          >
+            {content}
+          </Text>
           <Text paddingLeft='2%' fontSize={{base:'0.4rem',lg:'0.8rem'}}>skills:</Text>
           <Flex 
             justifyContent='center' 

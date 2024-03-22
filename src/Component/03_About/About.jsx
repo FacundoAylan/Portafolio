@@ -89,6 +89,7 @@ const About = () => {
           animation={{
             lg: `${animation} 1s ease`,
           }}
+          textAlign= 'justify'
         >
           ¡Hola! Soy Facundo, estudiante de Analista en Sistemas en la UBA y
           Full Stack Developer. Me apasiona el diseño web y me encanta aprender

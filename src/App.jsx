@@ -1,8 +1,8 @@
-import NavBar from '@/Component/1-NavBar/NavBar';
-import HomePage from '@/Component/2-HomePage/HomePage';
-import About from './Component/03-About/About';
-import Skills from '@/Component/4-Skills/Skills';
-import Project from '@/Component/5-Projects/Projects';
+import NavBar from '@/Component/1_NavBar/NavBar';
+import HomePage from '@/Component/2_HomePage/HomePage';
+import About from './Component/03_About/About';
+import Skills from '@/Component/4_Skills/Skills';
+import Project from '@/Component/5_Projects/Projects';
 import { Box, Flex} from '@chakra-ui/react';
 import principal from '@/assets/principal.jpg';
 import { useState } from 'react';
