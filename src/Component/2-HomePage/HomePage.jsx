@@ -67,18 +67,18 @@ const HomePage = () => {
       >
       <Flex
         overflow="hidden"
-        width={{base:'100%',lg:'98%'}}
-        height={{base:'100%',lg:'98%'}}
-        backgroundColor={{base:'trasnparent',sm:"#08244c",lg:"#0c203b"}}
+        width={{base:'90%',sm:'100%',lg:'98%'}}
+        height={{base:'80%', sm:'100%',lg:'98%'}}
+        backgroundColor={{base:'#0c203b',sm:"#08244c",lg:"#0c203b"}}
         borderRadius={{base:'0',sm:'18px',lg:"18px"}}
         color="white"
         position="relative"
         flexDirection="column"
         justifyContent='center'
         alignItems={"center"}
-        paddingTop={{base:'15%',sm:'0', lg:'0'}}
+        paddingTop={{base:'2%',sm:'0', lg:'0'}}
         gap={1}
-        margin={{lg:'1%'}}
+        margin={{base:'5%', sm:'0', lg:'1%'}}
       >
         <Image 
           src={profile} 
@@ -111,7 +111,7 @@ const HomePage = () => {
           Desarrollador Full-Stack
         </Text>
         <Text fontWeight='bold'>Experto en Front-End</Text>
-        <Text width='100%' fontWeight='bold'paddingLeft='6%'>Contactos:</Text>
+        <Text width='100%' fontWeight='bold'paddingLeft={{lg:'6%'}} textAlign={{base:'center',lg:'start'}}>Contactos:</Text>
         <Flex
           width={{ base: '60%', sm: '100%', lg: '100%' }}
           flexDirection='row'
