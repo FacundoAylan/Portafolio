@@ -55,8 +55,8 @@ const About = () => {
   return (
     <Box
       width="100%"
-      height="100%"
-      paddingTop={{ base: '0', lg: '4%' }}
+      height='100%'
+      paddingTop={{ base: '0',sm:'3%', lg: '4%' }}
       position="relative"
       overflow="hidden"
     >
@@ -82,6 +82,8 @@ const About = () => {
         <Text
           fontWeight="bold"
           marginTop="2%"
+          paddingLeft='2%'
+          paddingRight='2%'
           fontSize={{ base: '0.8rem', lg: '1.1rem' }}
           color="white"
           animation={{
@@ -102,6 +104,7 @@ const About = () => {
             width={{ base: '100%', lg: '50%' }}
             color="white"
             display={{ base: 'none', lg: 'block' }}
+            paddingLeft='2%'
             animation={{
               lg: `${animation2} 1s ease`,
             }}
@@ -153,6 +156,7 @@ const About = () => {
             animation={{
               lg: `${animation3} 1s ease`,
             }}
+            paddingLeft={{base:'4%', sm:'1%', lg:'0'}}
           >
             <Text
               fontSize={{ base: '20px', lg: '36px' }}
@@ -248,8 +252,8 @@ const About = () => {
         </Flex>
         <Button
           position="absolute"
-          bottom={{ base: '10%', lg: '2%' }}
-          left={{ base: '35%', lg: '45%' }}
+          bottom={{ base: '10%',sm:'1%', lg: '2%' }}
+          left={{ base: '35%',sm:'40%', lg: '45%' }}
           backgroundColor="#62aeef"
           textDecoration="none"
           _hover={{ transform: 'scale(1.1)' }}

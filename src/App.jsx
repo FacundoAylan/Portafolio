@@ -49,7 +49,7 @@ const App = () => {
       <Box width="100%" height="100vh" id="home" overflow="hidden">
         <HomePage isActive={activeSection === 'home'} />
       </Box>
-      <Box width="100%" height="100vh" id="about" overflow="hidden">
+      <Box width="100%" height={{base:'100vh',sm:'115vh', lg:'100vh'}} id="about" overflow="hidden">
         <About isActive={activeSection === 'about'} />
       </Box>
       <Box width="100%" height="100vh" id="skills" overflow="hidden">
