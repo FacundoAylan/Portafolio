@@ -31,6 +31,8 @@ const CardSkills = ({name, icons}) => {
         fontWeight='bold'
         fontSize={{base:'0.6rem',lg:'0.6rem'}}
         textAlign='center'
+        fontFamily='description'
+        letterSpacing='2px'
       >
         {name}
       </Text>

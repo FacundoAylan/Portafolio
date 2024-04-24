@@ -21,9 +21,11 @@ const Projects = () => {
       paddingBottom="2%"
     >
       <Text
+        letterSpacing='4px'
+        fontFamily='title'
+        color='#ea63fe'
         fontSize="2rem"
         textTransform="uppercase"
-        color="white"
         fontWeight="bold"
         textAlign="center"
         animation={`${animation} 1.5s ease`}

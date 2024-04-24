@@ -1,6 +1,10 @@
 @font-face {
-  font-family: 'pixel';
-  src: url('./assets/font/pixel.ttf') format('truetype');
+  font-family: 'title';
+  src: url('./assets/font/title.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'description';
+  src: url('./assets/font/description.ttf');
 }
 *{
   margin: 0;

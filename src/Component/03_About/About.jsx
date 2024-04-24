@@ -68,28 +68,32 @@ const About = () => {
         display="inline-block"
       >
         <Text
+          letterSpacing='4px'
+          fontFamily='title'
+          color='#ea63fe'
           width="100%"
           textAlign="center"
-          color="white"
           fontWeight="bold"
           fontSize={{ base: '25px', lg: '36px' }}
           animation={{
             lg: `${animation} 1s ease`,
           }}
         >
-          Sobre mi
+          SOBRE MI
         </Text>
         <Text
           fontWeight="bold"
           marginTop="2%"
           paddingLeft='2%'
           paddingRight='2%'
-          fontSize={{ base: '0.8rem', lg: '1.1rem' }}
+          fontSize={{ base: '0.8rem', lg: '1.2rem' }}
           color="white"
           animation={{
             lg: `${animation} 1s ease`,
           }}
           textAlign= 'justify'
+          fontFamily='description'
+          letterSpacing='3px'
         >
           ¡Hola! Soy Facundo, estudiante de Analista en Sistemas en la UBA y
           Full Stack Developer. Me apasiona el diseño web y me encanta aprender
@@ -100,7 +104,7 @@ const About = () => {
           estoy abierto a nuevas oportunidades y colaboraciones, así que no
           dudes en ponerte en contacto conmigo.
         </Text>
-        <Flex marginTop="3%" flexDirection={{ base: 'column', lg: 'row' }}>
+        <Flex marginTop="3%" flexDirection={{ base: 'column', lg: 'row' }} >
           <Box
             width={{ base: '100%', lg: '50%' }}
             color="white"
@@ -111,14 +115,12 @@ const About = () => {
             }}
           >
             <Text
-              fontSize={{ base: '20px', lg: '36px' }}
+              fontSize={{ base: '10px', lg: '20px' }}
               fontWeight="bold"
-              color="transparent"
-              bgImage="linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f)"
-              backgroundClip="text"
-              backgroundSize="100% 100%"
-              backgroundRepeat="no-repeat"
-              backgroundPosition="center bottom"
+              letterSpacing='4px'
+              fontFamily='title'
+              color='#ea63fe'
+              textTransform='uppercase'
             >
               Datos Personales
             </Text>
@@ -127,6 +129,8 @@ const About = () => {
               fontWeight="bold"
               marginLeft="1%"
               marginTop="1%"
+              fontFamily='description'
+              letterSpacing='3px'
             >
               Cumpleaños: 20/02/2000
             </Text>
@@ -135,6 +139,8 @@ const About = () => {
               fontWeight="bold"
               marginLeft="1%"
               marginTop="1%"
+              fontFamily='description'
+              letterSpacing='3px'
             >
               Telefono: +54 1136747801
             </Text>
@@ -143,10 +149,13 @@ const About = () => {
               fontWeight="bold"
               marginLeft="1%"
               marginTop="1%"
+              fontFamily='description'
+              letterSpacing='3px'
             >
               Ubicacion: Recoleta capital federal
             </Text>
-            <Text fontWeight="bold" marginLeft="1%" marginTop="1%">
+            <Text fontWeight="bold" marginLeft="1%" marginTop="1%" fontFamily='description'
+              letterSpacing='3px'>
               CORREO: facundoaylan3@gmail.com
             </Text>
           </Box>
@@ -160,9 +169,13 @@ const About = () => {
             paddingLeft={{base:'4%', sm:'1%', lg:'0'}}
           >
             <Text
-              fontSize={{ base: '20px', lg: '36px' }}
+              fontSize={{ base: '20px', lg: '20px' }}
               fontWeight="bold"
               textAlign="center"
+              letterSpacing='4px'
+              fontFamily='title'
+              color='#ea63fe'
+              textTransform='uppercase'
             >
               Intereses
             </Text>
@@ -175,20 +188,20 @@ const About = () => {
               marginBottom="2%"
             >
               <Box
-                borderRight="6px solid #f7434e"
+                borderRight="6px solid #07e2c5"
                 borderTop="6px solid #07e2c5"
                 borderLeft='6px solid #07e2c5'
                 borderBottom='6px solid #07e2c5'
                 boxShadow="inset 0 0 65px 5px #08e4c4"
               >
                 <Icon width="100px" height="100px" as={FaDesktop} color='#f5f5dc'/>
-                <Text>Computadoras</Text>
+                <Text fontFamily='description'letterSpacing='2px'>Computadoras</Text>
               </Box>
               <Box
-                borderRight="6px solid #f7434e"
-                borderBottom="6px solid #f7434e"
-                borderTop='6px solid #f7434e'
-                boxShadow="inset 0 0 65px 5px #f7434e"
+                borderBottom="6px solid #07e2c5"
+                borderTop='6px solid #07e2c5'
+                borderRight='6px solid #07e2c5'
+                boxShadow="inset 0 0 65px 5px #08e4c4"
                 padding="1%"
               >
                 <Icon
@@ -197,7 +210,7 @@ const About = () => {
                   as={FaMicrochip}
                   color='#f5f5dc'
                 />
-                <Text>Electronica</Text>
+                <Text fontFamily='description'letterSpacing='2px'>Electronica</Text>
               </Box>
               <Box
                 borderRight="6px solid #ea63fe"
@@ -207,10 +220,10 @@ const About = () => {
                 padding="1%"
               >
                 <Icon width="100px" height="100px" as={FaGamepad} color=''/>
-                <Text>Videojuegos</Text>
+                <Text fontFamily='description'letterSpacing='2px'>Videojuegos</Text>
               </Box>
               <Box
-                borderRight="6px solid #f7434e"
+                borderRight="6px solid #07e2c5"
                 borderBottom="6px solid #ea63fe"
                 borderTop='6px solid #ea63fe'
                 boxShadow="inset 0 0 65px 5px #ea63fe"
@@ -221,13 +234,13 @@ const About = () => {
                   height="100px"
                   as={FaMusic}
                 />
-                <Text>Musica</Text>
+                <Text fontFamily='description'letterSpacing='2px'>Musica</Text>
               </Box>
               <Box
-                borderRight="6px solid #f7434e"
-                borderTop="6px solid #f7434e"
-                borderBottom='6px solid #f7434e'
-                boxShadow="inset 0 0 65px 5px #f7434e"
+                borderBottom="6px solid #07e2c5"
+                borderTop='6px solid #07e2c5'
+                borderRight='6px solid #07e2c5'
+                boxShadow="inset 0 0 65px 5px #08e4c4"
                 padding="1%"
               >
                 <Icon
@@ -236,7 +249,7 @@ const About = () => {
                   as={FaVideo}
                   color='white'
                 />
-                <Text>Peliculas</Text>
+                <Text fontFamily='description'letterSpacing='2px'>Peliculas</Text>
               </Box>
               <Box
                 borderBottom="6px solid #07e2c5"
@@ -246,7 +259,7 @@ const About = () => {
                 padding="1%"
               >
                 <Icon width="100px" height="100px" as={FaKeyboard} color='#f5f5dc'/>
-                <Text>Programar</Text>
+                <Text fontFamily='description'letterSpacing='2px'>Programar</Text>
               </Box>
             </Flex>
           </Box>
@@ -262,7 +275,7 @@ const About = () => {
             lg: `${animation4} 1s ease`,
           }}
         >
-          <Link download="Facundo_Aylan.pdf" href={documentoPDF}>
+          <Link download="Facundo_Aylan.pdf" href={documentoPDF} fontFamily='description'letterSpacing='3px'>
             Descargar cv
           </Link>
         </Button>

@@ -107,11 +107,11 @@ const HomePage = () => {
         >
           Facundo Aylan
         </Text>
-        <Text fontWeight="bold" fontSize="1rem" textAlign="center">
+        <Text fontWeight="bold" fontSize="1rem" textAlign="center" fontFamily='description'letterSpacing='3px'>
           Desarrollador Full-Stack
         </Text>
-        <Text fontWeight='bold'>Experto en Front-End</Text>
-        <Text width='100%' fontWeight='bold'paddingLeft={{lg:'6%'}} textAlign={{base:'center',lg:'start'}}>Contactos:</Text>
+        <Text fontWeight='bold' fontFamily='description'letterSpacing='3px'>Experto en Front-End</Text>
+        <Text width='100%' fontWeight='bold'paddingLeft={{lg:'6%'}} textAlign={{base:'center',lg:'start'}} fontFamily='description'letterSpacing='3px'>Contactos:</Text>
         <Flex
           width={{ base: '60%', sm: '100%', lg: '100%' }}
           flexDirection='row'

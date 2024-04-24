@@ -137,22 +137,27 @@ const Cardprojects = ({ image, title, content, subtitle, right, video, github, i
             display={{base:'none', lg:'block'}}
           />
           <Center 
-            fontSize={{ base: '0.8rem', lg: '1.3rem' }}
+            fontSize={{ base: '0.8rem', lg: '1.2rem' }}
             color="transparent"
             bgImage="linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f)"
             backgroundClip="text"
             backgroundSize="100% 100%"
             backgroundRepeat="no-repeat"
             backgroundPosition="center bottom"
+            fontFamily='title'
+            letterSpacing='2px'
           >
             {title}
           </Center>
-          <Center padding='1%' fontSize={{base:'0.6rem',lg:'0.9rem'}}>{subtitle}</Center>
+          <Center padding='1%' fontSize={{base:'0.6rem',lg:'0.9rem'}} fontFamily='description'
+            letterSpacing='2px'>{subtitle}</Center>
           <Text 
             fontSize={{base:'0.4rem',lg:'0.8rem'}} 
             fontWeight={600} 
             paddingLeft='3%' 
             paddingRight='3%'
+            fontFamily='description'
+            letterSpacing='2px'
           >
             {content}
           </Text>
@@ -177,7 +182,7 @@ const Cardprojects = ({ image, title, content, subtitle, right, video, github, i
                     flexDirection='column' 
                   >
                     <Image src={value.icon} boxSize={6}/>
-                    <Text fontSize={{base:'0.3rem',lg:'0.7rem'}}>{value.name}</Text>
+                    <Text fontSize={{base:'0.3rem',lg:'0.7rem'}} fontFamily='description' letterSpacing='2px'>{value.name}</Text>
                   </Flex>
                 )
               })
@@ -193,7 +198,7 @@ const Cardprojects = ({ image, title, content, subtitle, right, video, github, i
             justifyContent='center'
           >
             <Icon as={FaGithub} boxSize={8} color='#0dfcf9'/>
-            <Text fontSize={{base:'0.6rem',lg:'0.7rem'}}>git-hub</Text>
+            <Text fontSize={{base:'0.6rem',lg:'0.7rem'}} fontFamily='description' letterSpacing='2px'>git-hub</Text>
           </Link>
         </Flex>
       </Flex>

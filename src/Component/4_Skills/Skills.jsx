@@ -15,7 +15,7 @@ import linux from './skills_image/linux.svg';
 import windows from './skills_image/windows.svg';
 import computer from'./skills_image/skills.png';
 import skillBackground from'./skills_image/backgroundSkills.png';
-import { Box, Flex, Text, keyframes, ScaleFade, Image } from '@chakra-ui/react';
+import { Box, Flex, Text, keyframes, Image } from '@chakra-ui/react';
 import CardSkills from './boxSkills';
 
 const traslate = keyframes`
@@ -99,9 +99,11 @@ const Skills = () => {
           src={computer} 
           display={{base:'none',sm:'none',lg:'block'}}
           position='absolute'
-          left='25%'
-          bottom='-15%'
+          left='22%'
+          bottom='-12%'
           animation={`${animation} 1.5s ease`}
+          width='50%'
+          height='80%'
         />
         <Box 
           width={{base:'100%',sm:'100%',lg:'30%'}}
@@ -118,6 +120,8 @@ const Skills = () => {
           backgroundColor={{lg:'#0c203b'}}
         >
           <Text
+            letterSpacing='4px'
+            fontFamily='title'
             textTransform="uppercase"
             color="#ea63fe"
             fontWeight="bold"
@@ -134,6 +138,7 @@ const Skills = () => {
             height="auto"
             justifyContent="center"
             animation={`${animation2} 2s ease`}
+            marginTop='10px'
           >
             {front.map((icons, index) => {
               return (
@@ -160,6 +165,8 @@ const Skills = () => {
           backgroundColor={{lg:'#0c203b'}}
         >
           <Text
+            letterSpacing='4px'
+            fontFamily='title'
             textTransform="uppercase"
             color="#ea63fe"
             fontWeight="bold"
@@ -177,6 +184,7 @@ const Skills = () => {
             padding="1%"
             animation={`${animation3} 2s ease`}
             gap={1.3}
+            marginTop='10px'
           >
             {back.map((icons, index) => {
               return (
@@ -197,6 +205,8 @@ const Skills = () => {
           backgroundColor={{lg:'#0c203b'}}
         >
           <Text
+            letterSpacing='4px'
+            fontFamily='title'
             textTransform="uppercase"
             color="#ea63fe"
             fontWeight="bold"
@@ -212,6 +222,7 @@ const Skills = () => {
             height="auto"
             justifyContent="center"
             animation={`${animation} 2s ease`}
+            marginTop='10px'
           >
             {extra.map((icons, index) => {
               return (
