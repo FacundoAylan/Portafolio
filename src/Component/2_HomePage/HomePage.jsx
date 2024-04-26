@@ -1,4 +1,3 @@
-import profile from '@/assets/image/profile.jpg'
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { Box, Flex, Icon, Image, Link, Text, keyframes } from '@chakra-ui/react';
 
@@ -81,11 +80,11 @@ const HomePage = () => {
         margin={{base:'5%', sm:'0', lg:'1%'}}
       >
         <Image 
-          src={profile} 
+          src='https://firebasestorage.googleapis.com/v0/b/padel-1d48a.appspot.com/o/profile.jpg?alt=media&token=c0195c1f-282f-493a-9634-1c8c0e016e17' 
           display={{base:'block',sm:'none',lg:'block'}}
           borderRadius='100%'
           height={{base:'25%',lg:'40%'}}
-          border='3px double #ea63fe'
+          filter='drop-shadow(2px 1px 4px white)'
         />
         <Text
           width="100%"
@@ -96,7 +95,7 @@ const HomePage = () => {
           fontSize={{ base: '2rem', lg: '2.5em' }}
           lineHeight="1.2"
           letterSpacing="2px"
-          padding="1px"
+          paddingTop="6px"
           color="transparent"
           bgImage="linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f)"
           backgroundClip="text"
@@ -104,6 +103,8 @@ const HomePage = () => {
           backgroundRepeat="no-repeat"
           backgroundPosition="center bottom"
           animation={`${text} 2s ease-in-out infinite`}
+          fontFamily='description'
+          textTransform='uppercase'
         >
           Facundo Aylan
         </Text>

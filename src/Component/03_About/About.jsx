@@ -8,7 +8,6 @@ import {
   Text,
   keyframes,
 } from '@chakra-ui/react';
-import documentoPDF from './cv.pdf';
 import {
   FaDesktop,
   FaMicrochip,
@@ -268,15 +267,25 @@ const About = () => {
           position="absolute"
           bottom={{ base: '10%',sm:'1%', lg: '2%' }}
           left={{ base: '35%',sm:'40%', lg: '45%' }}
-          backgroundColor="#62aeef"
+          backgroundColor="#082046"
           textDecoration="none"
+          borderColor='#ea63fe'
+          borderWidth='3px'
           _hover={{ transform: 'scale(1.1)' }}
           animation={{
             lg: `${animation4} 1s ease`,
           }}
         >
-          <Link download="Facundo_Aylan.pdf" href={documentoPDF} fontFamily='description'letterSpacing='3px'>
-            Descargar cv
+          <Link
+           href='https://firebasestorage.googleapis.com/v0/b/padel-1d48a.appspot.com/o/CVFacundo%20Aylan.pdf?alt=media&token=f8e2bd83-af19-4bd6-ac78-61e713180f75' 
+           fontFamily='description'
+           target='_blank'
+           letterSpacing='3px'
+           color='#ea63fe'
+           fontSize='1.5rem'
+           paddingTop='2%'
+          >
+            Ver cv
           </Link>
         </Button>
       </Box>

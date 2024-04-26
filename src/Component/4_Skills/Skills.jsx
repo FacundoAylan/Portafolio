@@ -106,7 +106,7 @@ const Skills = () => {
           height='80%'
         />
         <Box 
-          width={{base:'100%',sm:'100%',lg:'30%'}}
+          width={{base:'100%',sm:'100%',lg:'36%'}}
           height='auto'
           position={{base:'none',lg:'absolute'}}
           top='4%'

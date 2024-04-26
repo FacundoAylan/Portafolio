@@ -32,7 +32,7 @@ const App = () => {
       position="relative"
       padding="0"
       margin="0"
-      backgroundImage={principal}
+      backgroundImage="url('https://firebasestorage.googleapis.com/v0/b/padel-1d48a.appspot.com/o/principal.jpg?alt=media&token=f92b1177-6911-4e4d-a654-6f912e440e48')"
       backgroundSize={{ base: '250% 100%', sm: '350% 100%', lg: '100% 100%' }}
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
