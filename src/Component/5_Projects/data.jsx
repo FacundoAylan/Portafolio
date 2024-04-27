@@ -14,8 +14,22 @@ import express from '../4_Skills/skills_image/express.svg';
 import postgres from '../4_Skills/skills_image/postgres.svg';
 import python from '../4_Skills/skills_image/python.svg'
 import firebase from '../4_Skills/skills_image/firebase.svg';
+import tailwind from '../4_Skills/skills_image/tailwindcss.svg';
+import next from '../4_Skills/skills_image/next-js.svg';
 
 export const slides = [
+  {
+    image: imagen4,
+    title: 'Cursort',
+    subtitle: 'FullStack',
+    content: `Es una app en la cual estoy trabajando aun .`,
+    rightSubtitle: [
+      {name:'Next js',icon:next},
+      {name:'tailwind css', icon:tailwind},
+    ],
+    github:'https://github.com/FacundoAylan/CurSort',
+    video:'https://player.vimeo.com/video/940176559?h=4325dfd2bc'
+  },
   {
     image: imagen7,
     title: 'Harmoni wisch',
@@ -60,22 +74,6 @@ export const slides = [
   //   github:'https://github.com/FacundoAylan/dashboard',
   //   video:''
   // },
-  {
-    image: imagen4,
-    title: 'Cursort',
-    subtitle: 'FullStack',
-    content: `Aplición web  en las cual vas a poder comprar cursos de programación.`,
-    rightSubtitle: [
-      {name:'React js',icon:react},
-      {name:'redux',icon:redux}, 
-      {name:'css', icon:css},
-      {name:'node js',icon:node},
-      {name:'express js', icon:express},
-      {name:'postgres', icon:postgres}
-    ],
-    github:'https://github.com/FacundoAylan/CurSort',
-    video:''
-  },
   {
     image: imagen5,
     title: 'Videogamer',
